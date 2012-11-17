@@ -1,5 +1,5 @@
 
-var matrix = function(body, opts) {
+var matrix = function(body, json, opts) {
     var margin = opts.margin,
         height = opts.height,
         width = opts.width;
@@ -15,7 +15,7 @@ var matrix = function(body, opts) {
 	.append("g")
 	.attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-    d3.json("nfl2010.json", function(season) {
+    d3.json(json, function(season) {
 	var matrix = [],
 	nodes = season.nodes,
 	n = nodes.length;
