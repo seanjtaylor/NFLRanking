@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>NFL Win Matrix</title>
+<style>
+
+@import url(style.css);
+
+.background {
+  fill: #eee;
+}
+
+line {
+  stroke: #fff;
+}
+
+text.active {
+  fill: red;
+}
+
+</style>
+<script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
+
+<body>
+<h1>NFL Win Matrix</h1>
+<h2>2010 Season</h2>
+
+<aside style="margin-top:80px;">
+<p>Order: <select id="order">
+  <option value="name">by Name</option>
+  <option value="count">by Wins</option>
+  <option value="orank">by Optimal Rank</option>
+</select>
+
+<p>Each colored cell represents that the row team beat the column team. Darker cells indicate that they won twice.
+
+<p>Use the drop-down menu to reorder the matrix and explore the data.
+
+<h2>Loss: <var id="loss"></var></h2>
+
+<p>The loss function is the number of times a higher ranked team beat a lower ranked team.
+
+<p>This can be visualized as the number of colored squares beneath the diagonal.
+
+<p>Built with <a href="http://d3js.org/">d3.js</a> using the following examples </p>
+<ul>
+  <li><a href="http://bl.ocks.org/1153292">Directed Edges (Curves and Arrow Markers)</a></li>
+  <li><a href="http://bost.ocks.org/mike/miserables/">Les Misérables Co-occurrence</a></li>
+</ul>
+</aside>
+
+<script src="graphics.js"></script>
+<script>
+matrix("body", {width: 720, height: 720, margin: {top: 80, right: 0, bottom: 10, left: 80}});
+</script>
+</body>
+</html>
