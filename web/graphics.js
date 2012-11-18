@@ -37,12 +37,14 @@ var matrix = function(body, json, opts) {
 	var orders = {
 	    name: d3.range(n).sort(function(a, b) { return d3.ascending(nodes[a].name, nodes[b].name); }),
 	    orank: d3.range(n).sort(function(a, b) { return d3.ascending(nodes[a].orank, nodes[b].orank); }),
+            brank: d3.range(n).sort(function(a, b) { return d3.ascending(nodes[a].brank, nodes[b].brank); }),
 	    count: d3.range(n).sort(function(a, b) { return nodes[b].count - nodes[a].count; })
 	};
 
 	var losses = {
 	    name: 0,
 	    orank: 0,
+            brank: 0,
 	    count: 0
 	};
 	// Compute losses.

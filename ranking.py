@@ -95,8 +95,11 @@ def output_d3(year, fn='web/nfl%i.json'):
 
     g = make_graph(df)
     oranks = optimalrank(g)
+    branks = logitrank(df)
 
-    nodes = [dict(name=t['name'], group=1, orank=oranks[t['name']]) for t in g.vs]
+    nodes = [dict(name=t['name'], group=1, 
+                  orank=oranks[t['name']], 
+                  brank=branks[t['name']]) for t in g.vs]
     fas = set(g.feedback_arc_set(method='exact'))
     links = [dict(source=e.source, target=e.target, value=1,  fas=1 if e.index in fas else 0) 
              for e in g.es]
