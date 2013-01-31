@@ -29,12 +29,39 @@ var winMatrix = function() {
             g.PTSH = parseInt(g.PTSH);
             g.PTSV = parseInt(g.PTSV);
 	});
-        var teams = {};
-        games.forEach(function(x) {
-            teams[x.H] = 1;
-        });
-        teams = d3.keys(teams).sort();
-		x.domain(teams);
+	var teams = ['DEN',
+ 'ATL',
+ 'HOU',
+ 'NE',
+ 'GB',
+ 'SF',
+ 'SEA',
+ 'MIN',
+ 'IND',
+ 'CHI',
+ 'WAS',
+ 'BAL',
+ 'NYG',
+ 'CIN',
+ 'STL',
+ 'DAL',
+ 'PIT',
+ 'NO',
+ 'CAR',
+ 'MIA',
+ 'TB',
+ 'NYJ',
+ 'TEN',
+ 'SD',
+ 'ARI',
+ 'BUF',
+ 'DET',
+ 'CLE',
+ 'PHI',
+ 'OAK',
+ 'JAC',
+ 'KC'];
+	x.domain(teams);
 
         var labels = square.selectAll("text")
             .data(teams)

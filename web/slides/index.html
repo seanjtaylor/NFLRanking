@@ -26,7 +26,7 @@
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        
         <script type="text/javascript" src="graphics.js"></script>
 		<script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
 		<style>
@@ -79,7 +79,6 @@
 					<ul>
 					  <li>Social influence</li>
 					  <li>Causal Inference and Web Experiments</li>
-					  <li>Econometrics and Statistics</li>
 					  <li>Bayesian modeling</li>
 					  <li>Prediction</li>
 					</ul>
@@ -110,6 +109,16 @@
 					</section>
 
 				</section>
+				<section>
+				  <h2>Outline</h2>
+				  <ul>
+				    <li>What is a ranking?</li>
+				    <li>Evaluating rankings</li>
+				    <li>Six methods</li>
+				    <li>Empirical evaluation</li>
+				    <li>Ranking other things</li>
+				  </ul>
+				</section>
 
 
 				<section>
@@ -138,6 +147,15 @@
 				<section>
 					<section>
 						<h2>Ranking == Description</h2>
+
+						<a class="image" href="http://www.nber.org/papers/w10803.pdf" target="_blank">
+						<img src="img/college-revealed.png" alt="Revealed Preference Rankings">
+						</a>
+						<p>which colleges are being chosen over others?</p>
+						<p>"A Revealed Preference Ranking of U.S. Colleges and Universities" (Avery et al. 2004)</p>
+					</section>
+
+					<section>
 						<p>
 						<img width=782 height=506 src="img/bcs.jpg" alt="BCS Rankings">
 						</p>
@@ -148,13 +166,6 @@
 						<img src="img/tennis.png" alt="Top Tennis Players">
 						</a>
 						<p>which tennis player is the best?</p>
-					</section>
-					<section>
-						<a class="image" href="http://www.nber.org/papers/w10803.pdf" target="_blank">
-						<img src="img/college-revealed.png" alt="Revealed Preference Rankings">
-						</a>
-						<p>which colleges are being chosen over others?</p>
-						<p>"A Revealed Preference Ranking of U.S. Colleges and Universities" (Avery et al. 2004)</p>
 					</section>
 				</section>
 
@@ -177,7 +188,7 @@
 					</section>
 					<section>
 						<h2>Ranking == Regression</h2>
-						<p>All we have to do is use: \( (\mathbb{R}, \leq) \)!</p>
+						<p>All we have to do is use: \( (\mathbb{R}, \geq) \)!</p>
 						<p>
 						<ul>
 						<li> Obviously satisfies total ordering criteria. </li>
@@ -213,7 +224,8 @@
 					<input id="win-matrix-season" type="range" min="2002" max="2012" value="2012">
 					<label for="win-matrix-week">Week: <var id="selected-week">17</var></label>
 					<input id="win-matrix-week" type="range" min="1" max="20" value="17">
-					<div>
+					<!--<div>
+					
 					<label for="win-matrix-ranking">Ranking: </label>
 					<select id="win-matrix-ranking">
 					    <option value="wins">wins</option>
@@ -224,7 +236,7 @@
 					    <option value="espn">espn</option>
 					    <option value="optimal">optimal</option>
 					</select>
-					</div>
+					</div>-->
 					</p>
 				  </section>
 
@@ -296,8 +308,8 @@
 		                  </section>
 				  <section>
 				    <h2>Formula</h2>
-				    <p> Points for \( = x \), Points against \( = y \)</p>
-				    <p>Win Rate \( = \frac{x^{\beta}}{x^{\beta} + y^{\beta}} \)</p>
+				    <p> Points for \( = y \), Points against \( = x \)</p>
+				    <p>Win Rate \( = \frac{y^{\beta}}{x^{\beta} + y^{\beta}} \)</p>
 				    <p>Set \( \beta \) empirically, different for each sport.</p>
 				    <p>\( \beta \) can be thought of as a shrinkage parameter.</p>
 				  </section>
@@ -457,7 +469,7 @@ def power_iteration(m, iters=10000):
 				<section>
 				  <section>
 				    <h2>Bradley-Terry-Luce Model</h2>
-				    <p>\[ P(i>j) = \frac{e^{q_i - q_j}}{1 + e^{q_i - q_j}} = \mbox{logit}^{-1}(q_i - q_j) \] </p>
+				    <p>\[ P(i>j) = \frac{1}{1 + e^{-(q_i - q_j)}} = \mbox{logit}^{-1}(q_i - q_j) \] </p>
 				    <p>(Bradley & Terry, 1952; Luce, 1959)</p>
 				    <p>This is basically the same as a <a href="http://en.wikipedia.org/wiki/Rasch_model">Rasch model</a> from education.</p>
   				 </section>
@@ -485,7 +497,7 @@ quality_scores = clf.coef_[0]
 				      <li>Weight observations so that older games count less toward the likelihood.</li>
 				      <li>Regularization.</li>
 				      <li>Add control variables for random events that affect outcomes but are NOT part of team quality.</li>
-				      <li>e.g. fumbles lost, defensive touchdowns, </li>
+				      <li>e.g. fumbles lost, defensive touchdowns, missed field goals.</li>
 				    </ul>
   				 </section>
 				  <section>
@@ -631,12 +643,6 @@ g.delete_edges(feedback_arcs)
 				  </section>
 				</section>
 				<section>
-				  <h2>Make your predictions</h2>
-				  <a href="http://creds.me/t/super-bowl" target="_blank">
-				    <img src="img/creds_logo.png" />
-				  </a>
-				</section>
-				<section>
 				  <section>
 					<h2>Ranking people</h2>
 					<a href="http://arxiv.org/abs/1205.6822">
@@ -644,22 +650,29 @@ g.delete_edges(feedback_arcs)
 					</a>
 				  </section>
 				  <section>
-					<h2>Turn it into a pair- or group-wise comparison</h2>
+					<h2>Turn it into a pair-wise comparison</h2>
 					<ul>
 					  <li>Twitter reputation: reciprocity of follow-relationship</li>
 					  <li>Influence: which sharer of same link gets more clicks?</li>
 					  <li>Online dating: who spurns messages from whom?</li>
-					  <li>Online dating: who spurns messages from whom?</li>
 					</ul>
 				  </section>
 				</section>
-
 				<section>
-					<h1>Thanks!</h1>
+				  <h2>Make your Super Bowl predictions</h2>
+				  <h3>http://creds.me</h3>
+				  <a href="http://creds.me/t/super-bowl" target="_blank">
+				    <img src="img/creds_logo.png" />
+				  </a>
+				  <p>(shameless plug)</p>
+				</section>
+				<section>
+					<h1>Thanks!  Any questions?</h1>
 					<img src="../logos/PHI.png" style="border:none" />
 					<h3>Sean J. Taylor</h3>
 					<h3>@seanjtaylor</h3>
 					<h3>http://seanjtaylor.com</h3>
+					<p><a href="https://github.com/seanjtaylor/NFLRanking">https://github.com/seanjtaylor/NFLRanking</a></p>
 				</section>
 
 			</div>
@@ -695,8 +708,12 @@ g.delete_edges(feedback_arcs)
 			});
 Reveal.addEventListener("ready", winMatrix);
 Reveal.addEventListener("ready", gameGraph);
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    MathJax.Hub.Rerender(event.currentSlide);
+} );
 
 		</script>
 
 	</body>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </html>

@@ -23,10 +23,33 @@ def make_graph(df):
     
     return ig.Graph(edges=edges, directed=True, vertex_attrs={'name': teams})
 
+def make_matrix(df):
+    teams = sorted(df['H'].unique())
+    # convert teams to ints for igraph
+    ids = {team: i for i, team in enumerate(teams)}
+    m = np.zeros((len(ids), len(ids)))
+
+    for w, l in df[['Winner', 'Loser']].itertuples(index=False):
+        m[ids[w],ids[l]] = 1
+        
+    return m
+
 def pagerank(g):
     values = g.pagerank()
     g_pr = {vert['name']: val for vert, val in zip(g.vs, values)}
     return {key: i for i, (key, v) in enumerate(sorted(g_pr.iteritems(), key=lambda x: x[1]))}
+
+def powermethod(m, iters=100, x0=None):
+    if x0 == None:
+        x0 = np.ones(m.shape[0])
+        x0 /= np.linalg.norm(x0, 1)
+
+    for i in range(iters):
+        x0 = np.dot(m,x0)
+        x0 /= np.linalg.norm(x0,1)
+
+    return x0
+
 
 def optimalrank(g):
     g = g.copy() # we are going to mutate the graph
