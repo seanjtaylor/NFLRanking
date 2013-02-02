@@ -1,0 +1,2465 @@
+ix,method,rank,year
+0,eigenvector2,1,2002
+1,eigenvector2,2,2002
+2,eigenvector2,3,2002
+3,eigenvector2,4,2002
+4,eigenvector2,5,2002
+5,eigenvector2,6,2002
+6,eigenvector2,7,2002
+7,eigenvector2,8,2002
+8,eigenvector2,9,2002
+9,eigenvector2,10,2002
+10,eigenvector2,11,2002
+11,eigenvector2,12,2002
+12,eigenvector2,13,2002
+13,eigenvector2,14,2002
+14,eigenvector2,15,2002
+15,eigenvector2,16,2002
+16,eigenvector2,17,2002
+17,eigenvector2,18,2002
+18,eigenvector2,19,2002
+19,eigenvector2,20,2002
+20,eigenvector2,21,2002
+21,eigenvector2,22,2002
+22,eigenvector2,23,2002
+23,eigenvector2,24,2002
+24,eigenvector2,25,2002
+25,eigenvector2,26,2002
+26,eigenvector2,27,2002
+27,eigenvector2,28,2002
+28,eigenvector2,29,2002
+29,eigenvector2,30,2002
+30,eigenvector2,31,2002
+31,eigenvector2,32,2002
+32,eigenvector2,1,2003
+33,eigenvector2,2,2003
+34,eigenvector2,3,2003
+35,eigenvector2,4,2003
+36,eigenvector2,5,2003
+37,eigenvector2,6,2003
+38,eigenvector2,7,2003
+39,eigenvector2,8,2003
+40,eigenvector2,9,2003
+41,eigenvector2,10,2003
+42,eigenvector2,11,2003
+43,eigenvector2,12,2003
+44,eigenvector2,13,2003
+45,eigenvector2,14,2003
+46,eigenvector2,15,2003
+47,eigenvector2,16,2003
+48,eigenvector2,17,2003
+49,eigenvector2,18,2003
+50,eigenvector2,19,2003
+51,eigenvector2,20,2003
+52,eigenvector2,21,2003
+53,eigenvector2,22,2003
+54,eigenvector2,23,2003
+55,eigenvector2,24,2003
+56,eigenvector2,25,2003
+57,eigenvector2,26,2003
+58,eigenvector2,27,2003
+59,eigenvector2,28,2003
+60,eigenvector2,29,2003
+61,eigenvector2,30,2003
+62,eigenvector2,31,2003
+63,eigenvector2,32,2003
+64,eigenvector2,1,2004
+65,eigenvector2,2,2004
+66,eigenvector2,3,2004
+67,eigenvector2,4,2004
+68,eigenvector2,5,2004
+69,eigenvector2,6,2004
+70,eigenvector2,7,2004
+71,eigenvector2,8,2004
+72,eigenvector2,9,2004
+73,eigenvector2,10,2004
+74,eigenvector2,11,2004
+75,eigenvector2,12,2004
+76,eigenvector2,13,2004
+77,eigenvector2,14,2004
+78,eigenvector2,15,2004
+79,eigenvector2,16,2004
+80,eigenvector2,17,2004
+81,eigenvector2,18,2004
+82,eigenvector2,19,2004
+83,eigenvector2,20,2004
+84,eigenvector2,21,2004
+85,eigenvector2,22,2004
+86,eigenvector2,23,2004
+87,eigenvector2,24,2004
+88,eigenvector2,25,2004
+89,eigenvector2,26,2004
+90,eigenvector2,27,2004
+91,eigenvector2,28,2004
+92,eigenvector2,29,2004
+93,eigenvector2,30,2004
+94,eigenvector2,31,2004
+95,eigenvector2,32,2004
+96,eigenvector2,1,2005
+97,eigenvector2,2,2005
+98,eigenvector2,3,2005
+99,eigenvector2,4,2005
+100,eigenvector2,5,2005
+101,eigenvector2,6,2005
+102,eigenvector2,7,2005
+103,eigenvector2,8,2005
+104,eigenvector2,9,2005
+105,eigenvector2,10,2005
+106,eigenvector2,11,2005
+107,eigenvector2,12,2005
+108,eigenvector2,13,2005
+109,eigenvector2,14,2005
+110,eigenvector2,15,2005
+111,eigenvector2,16,2005
+112,eigenvector2,17,2005
+113,eigenvector2,18,2005
+114,eigenvector2,19,2005
+115,eigenvector2,20,2005
+116,eigenvector2,21,2005
+117,eigenvector2,22,2005
+118,eigenvector2,23,2005
+119,eigenvector2,24,2005
+120,eigenvector2,25,2005
+121,eigenvector2,26,2005
+122,eigenvector2,27,2005
+123,eigenvector2,28,2005
+124,eigenvector2,29,2005
+125,eigenvector2,30,2005
+126,eigenvector2,31,2005
+127,eigenvector2,32,2005
+128,eigenvector2,1,2006
+129,eigenvector2,2,2006
+130,eigenvector2,3,2006
+131,eigenvector2,4,2006
+132,eigenvector2,5,2006
+133,eigenvector2,6,2006
+134,eigenvector2,7,2006
+135,eigenvector2,8,2006
+136,eigenvector2,9,2006
+137,eigenvector2,10,2006
+138,eigenvector2,11,2006
+139,eigenvector2,12,2006
+140,eigenvector2,13,2006
+141,eigenvector2,14,2006
+142,eigenvector2,15,2006
+143,eigenvector2,16,2006
+144,eigenvector2,17,2006
+145,eigenvector2,18,2006
+146,eigenvector2,19,2006
+147,eigenvector2,20,2006
+148,eigenvector2,21,2006
+149,eigenvector2,22,2006
+150,eigenvector2,23,2006
+151,eigenvector2,24,2006
+152,eigenvector2,25,2006
+153,eigenvector2,26,2006
+154,eigenvector2,27,2006
+155,eigenvector2,28,2006
+156,eigenvector2,29,2006
+157,eigenvector2,30,2006
+158,eigenvector2,31,2006
+159,eigenvector2,32,2006
+160,eigenvector2,1,2007
+161,eigenvector2,2,2007
+162,eigenvector2,3,2007
+163,eigenvector2,4,2007
+164,eigenvector2,5,2007
+165,eigenvector2,6,2007
+166,eigenvector2,7,2007
+167,eigenvector2,8,2007
+168,eigenvector2,9,2007
+169,eigenvector2,10,2007
+170,eigenvector2,11,2007
+171,eigenvector2,12,2007
+172,eigenvector2,13,2007
+173,eigenvector2,14,2007
+174,eigenvector2,15,2007
+175,eigenvector2,16,2007
+176,eigenvector2,17,2007
+177,eigenvector2,18,2007
+178,eigenvector2,19,2007
+179,eigenvector2,20,2007
+180,eigenvector2,21,2007
+181,eigenvector2,22,2007
+182,eigenvector2,23,2007
+183,eigenvector2,24,2007
+184,eigenvector2,25,2007
+185,eigenvector2,26,2007
+186,eigenvector2,27,2007
+187,eigenvector2,28,2007
+188,eigenvector2,29,2007
+189,eigenvector2,30,2007
+190,eigenvector2,31,2007
+191,eigenvector2,32,2007
+192,eigenvector2,1,2008
+193,eigenvector2,2,2008
+194,eigenvector2,3,2008
+195,eigenvector2,4,2008
+196,eigenvector2,5,2008
+197,eigenvector2,6,2008
+198,eigenvector2,7,2008
+199,eigenvector2,8,2008
+200,eigenvector2,9,2008
+201,eigenvector2,10,2008
+202,eigenvector2,11,2008
+203,eigenvector2,12,2008
+204,eigenvector2,13,2008
+205,eigenvector2,14,2008
+206,eigenvector2,15,2008
+207,eigenvector2,16,2008
+208,eigenvector2,17,2008
+209,eigenvector2,18,2008
+210,eigenvector2,19,2008
+211,eigenvector2,20,2008
+212,eigenvector2,21,2008
+213,eigenvector2,22,2008
+214,eigenvector2,23,2008
+215,eigenvector2,24,2008
+216,eigenvector2,25,2008
+217,eigenvector2,26,2008
+218,eigenvector2,27,2008
+219,eigenvector2,28,2008
+220,eigenvector2,29,2008
+221,eigenvector2,30,2008
+222,eigenvector2,31,2008
+223,eigenvector2,32,2008
+224,eigenvector2,1,2009
+225,eigenvector2,2,2009
+226,eigenvector2,3,2009
+227,eigenvector2,4,2009
+228,eigenvector2,5,2009
+229,eigenvector2,6,2009
+230,eigenvector2,7,2009
+231,eigenvector2,8,2009
+232,eigenvector2,9,2009
+233,eigenvector2,10,2009
+234,eigenvector2,11,2009
+235,eigenvector2,12,2009
+236,eigenvector2,13,2009
+237,eigenvector2,14,2009
+238,eigenvector2,15,2009
+239,eigenvector2,16,2009
+240,eigenvector2,17,2009
+241,eigenvector2,18,2009
+242,eigenvector2,19,2009
+243,eigenvector2,20,2009
+244,eigenvector2,21,2009
+245,eigenvector2,22,2009
+246,eigenvector2,23,2009
+247,eigenvector2,24,2009
+248,eigenvector2,25,2009
+249,eigenvector2,26,2009
+250,eigenvector2,27,2009
+251,eigenvector2,28,2009
+252,eigenvector2,29,2009
+253,eigenvector2,30,2009
+254,eigenvector2,31,2009
+255,eigenvector2,32,2009
+256,eigenvector2,1,2010
+257,eigenvector2,2,2010
+258,eigenvector2,3,2010
+259,eigenvector2,4,2010
+260,eigenvector2,5,2010
+261,eigenvector2,6,2010
+262,eigenvector2,7,2010
+263,eigenvector2,8,2010
+264,eigenvector2,9,2010
+265,eigenvector2,10,2010
+266,eigenvector2,11,2010
+267,eigenvector2,12,2010
+268,eigenvector2,13,2010
+269,eigenvector2,14,2010
+270,eigenvector2,15,2010
+271,eigenvector2,16,2010
+272,eigenvector2,17,2010
+273,eigenvector2,18,2010
+274,eigenvector2,19,2010
+275,eigenvector2,20,2010
+276,eigenvector2,21,2010
+277,eigenvector2,22,2010
+278,eigenvector2,23,2010
+279,eigenvector2,24,2010
+280,eigenvector2,25,2010
+281,eigenvector2,26,2010
+282,eigenvector2,27,2010
+283,eigenvector2,28,2010
+284,eigenvector2,29,2010
+285,eigenvector2,30,2010
+286,eigenvector2,31,2010
+287,eigenvector2,32,2010
+288,eigenvector2,1,2011
+289,eigenvector2,2,2011
+290,eigenvector2,3,2011
+291,eigenvector2,4,2011
+292,eigenvector2,5,2011
+293,eigenvector2,6,2011
+294,eigenvector2,7,2011
+295,eigenvector2,8,2011
+296,eigenvector2,9,2011
+297,eigenvector2,10,2011
+298,eigenvector2,11,2011
+299,eigenvector2,12,2011
+300,eigenvector2,13,2011
+301,eigenvector2,14,2011
+302,eigenvector2,15,2011
+303,eigenvector2,16,2011
+304,eigenvector2,17,2011
+305,eigenvector2,18,2011
+306,eigenvector2,19,2011
+307,eigenvector2,20,2011
+308,eigenvector2,21,2011
+309,eigenvector2,22,2011
+310,eigenvector2,23,2011
+311,eigenvector2,24,2011
+312,eigenvector2,25,2011
+313,eigenvector2,26,2011
+314,eigenvector2,27,2011
+315,eigenvector2,28,2011
+316,eigenvector2,29,2011
+317,eigenvector2,30,2011
+318,eigenvector2,31,2011
+319,eigenvector2,32,2011
+320,eigenvector2,1,2012
+321,eigenvector2,2,2012
+322,eigenvector2,3,2012
+323,eigenvector2,4,2012
+324,eigenvector2,5,2012
+325,eigenvector2,6,2012
+326,eigenvector2,7,2012
+327,eigenvector2,8,2012
+328,eigenvector2,9,2012
+329,eigenvector2,10,2012
+330,eigenvector2,11,2012
+331,eigenvector2,12,2012
+332,eigenvector2,13,2012
+333,eigenvector2,14,2012
+334,eigenvector2,15,2012
+335,eigenvector2,16,2012
+336,eigenvector2,17,2012
+337,eigenvector2,18,2012
+338,eigenvector2,19,2012
+339,eigenvector2,20,2012
+340,eigenvector2,21,2012
+341,eigenvector2,22,2012
+342,eigenvector2,23,2012
+343,eigenvector2,24,2012
+344,eigenvector2,25,2012
+345,eigenvector2,26,2012
+346,eigenvector2,27,2012
+347,eigenvector2,28,2012
+348,eigenvector2,29,2012
+349,eigenvector2,30,2012
+350,eigenvector2,31,2012
+351,eigenvector2,32,2012
+352,espn,1,2002
+353,espn,2,2002
+354,espn,3,2002
+355,espn,4,2002
+356,espn,5,2002
+357,espn,6,2002
+358,espn,7,2002
+359,espn,8,2002
+360,espn,9,2002
+361,espn,10,2002
+362,espn,11,2002
+363,espn,12,2002
+364,espn,13,2002
+365,espn,14,2002
+366,espn,15,2002
+367,espn,16,2002
+368,espn,17,2002
+369,espn,18,2002
+370,espn,19,2002
+371,espn,20,2002
+372,espn,21,2002
+373,espn,22,2002
+374,espn,23,2002
+375,espn,24,2002
+376,espn,25,2002
+377,espn,26,2002
+378,espn,27,2002
+379,espn,28,2002
+380,espn,29,2002
+381,espn,30,2002
+382,espn,31,2002
+383,espn,32,2002
+384,espn,1,2003
+385,espn,2,2003
+386,espn,3,2003
+387,espn,4,2003
+388,espn,5,2003
+389,espn,6,2003
+390,espn,7,2003
+391,espn,8,2003
+392,espn,9,2003
+393,espn,10,2003
+394,espn,11,2003
+395,espn,12,2003
+396,espn,13,2003
+397,espn,14,2003
+398,espn,15,2003
+399,espn,16,2003
+400,espn,17,2003
+401,espn,18,2003
+402,espn,19,2003
+403,espn,20,2003
+404,espn,21,2003
+405,espn,22,2003
+406,espn,23,2003
+407,espn,24,2003
+408,espn,25,2003
+409,espn,26,2003
+410,espn,27,2003
+411,espn,28,2003
+412,espn,29,2003
+413,espn,30,2003
+414,espn,31,2003
+415,espn,32,2003
+416,espn,1,2004
+417,espn,2,2004
+418,espn,3,2004
+419,espn,4,2004
+420,espn,5,2004
+421,espn,6,2004
+422,espn,7,2004
+423,espn,8,2004
+424,espn,9,2004
+425,espn,10,2004
+426,espn,11,2004
+427,espn,12,2004
+428,espn,13,2004
+429,espn,14,2004
+430,espn,15,2004
+431,espn,16,2004
+432,espn,17,2004
+433,espn,18,2004
+434,espn,19,2004
+435,espn,20,2004
+436,espn,21,2004
+437,espn,22,2004
+438,espn,23,2004
+439,espn,24,2004
+440,espn,25,2004
+441,espn,26,2004
+442,espn,27,2004
+443,espn,28,2004
+444,espn,29,2004
+445,espn,30,2004
+446,espn,31,2004
+447,espn,32,2004
+448,espn,1,2005
+449,espn,2,2005
+450,espn,3,2005
+451,espn,4,2005
+452,espn,5,2005
+453,espn,6,2005
+454,espn,7,2005
+455,espn,8,2005
+456,espn,9,2005
+457,espn,10,2005
+458,espn,11,2005
+459,espn,12,2005
+460,espn,13,2005
+461,espn,14,2005
+462,espn,15,2005
+463,espn,16,2005
+464,espn,17,2005
+465,espn,18,2005
+466,espn,19,2005
+467,espn,20,2005
+468,espn,21,2005
+469,espn,22,2005
+470,espn,23,2005
+471,espn,24,2005
+472,espn,25,2005
+473,espn,26,2005
+474,espn,27,2005
+475,espn,28,2005
+476,espn,29,2005
+477,espn,30,2005
+478,espn,31,2005
+479,espn,32,2005
+480,espn,1,2006
+481,espn,2,2006
+482,espn,3,2006
+483,espn,4,2006
+484,espn,5,2006
+485,espn,6,2006
+486,espn,7,2006
+487,espn,8,2006
+488,espn,9,2006
+489,espn,10,2006
+490,espn,11,2006
+491,espn,12,2006
+492,espn,13,2006
+493,espn,14,2006
+494,espn,15,2006
+495,espn,16,2006
+496,espn,17,2006
+497,espn,18,2006
+498,espn,19,2006
+499,espn,20,2006
+500,espn,21,2006
+501,espn,22,2006
+502,espn,23,2006
+503,espn,24,2006
+504,espn,25,2006
+505,espn,26,2006
+506,espn,27,2006
+507,espn,28,2006
+508,espn,29,2006
+509,espn,30,2006
+510,espn,31,2006
+511,espn,32,2006
+512,espn,1,2007
+513,espn,2,2007
+514,espn,3,2007
+515,espn,4,2007
+516,espn,5,2007
+517,espn,6,2007
+518,espn,7,2007
+519,espn,8,2007
+520,espn,9,2007
+521,espn,10,2007
+522,espn,11,2007
+523,espn,12,2007
+524,espn,13,2007
+525,espn,14,2007
+526,espn,15,2007
+527,espn,16,2007
+528,espn,17,2007
+529,espn,18,2007
+530,espn,19,2007
+531,espn,20,2007
+532,espn,21,2007
+533,espn,22,2007
+534,espn,23,2007
+535,espn,24,2007
+536,espn,25,2007
+537,espn,26,2007
+538,espn,27,2007
+539,espn,28,2007
+540,espn,29,2007
+541,espn,30,2007
+542,espn,31,2007
+543,espn,32,2007
+544,espn,1,2008
+545,espn,2,2008
+546,espn,3,2008
+547,espn,4,2008
+548,espn,5,2008
+549,espn,6,2008
+550,espn,7,2008
+551,espn,8,2008
+552,espn,9,2008
+553,espn,10,2008
+554,espn,11,2008
+555,espn,12,2008
+556,espn,13,2008
+557,espn,14,2008
+558,espn,15,2008
+559,espn,16,2008
+560,espn,17,2008
+561,espn,18,2008
+562,espn,19,2008
+563,espn,20,2008
+564,espn,21,2008
+565,espn,22,2008
+566,espn,23,2008
+567,espn,24,2008
+568,espn,25,2008
+569,espn,26,2008
+570,espn,27,2008
+571,espn,28,2008
+572,espn,29,2008
+573,espn,30,2008
+574,espn,31,2008
+575,espn,32,2008
+576,espn,1,2009
+577,espn,2,2009
+578,espn,3,2009
+579,espn,4,2009
+580,espn,5,2009
+581,espn,6,2009
+582,espn,7,2009
+583,espn,8,2009
+584,espn,9,2009
+585,espn,10,2009
+586,espn,11,2009
+587,espn,12,2009
+588,espn,13,2009
+589,espn,14,2009
+590,espn,15,2009
+591,espn,16,2009
+592,espn,17,2009
+593,espn,18,2009
+594,espn,19,2009
+595,espn,20,2009
+596,espn,21,2009
+597,espn,22,2009
+598,espn,23,2009
+599,espn,24,2009
+600,espn,25,2009
+601,espn,26,2009
+602,espn,27,2009
+603,espn,28,2009
+604,espn,29,2009
+605,espn,30,2009
+606,espn,31,2009
+607,espn,32,2009
+608,espn,1,2010
+609,espn,2,2010
+610,espn,3,2010
+611,espn,4,2010
+612,espn,5,2010
+613,espn,6,2010
+614,espn,7,2010
+615,espn,8,2010
+616,espn,9,2010
+617,espn,10,2010
+618,espn,11,2010
+619,espn,12,2010
+620,espn,13,2010
+621,espn,14,2010
+622,espn,15,2010
+623,espn,16,2010
+624,espn,17,2010
+625,espn,18,2010
+626,espn,19,2010
+627,espn,20,2010
+628,espn,21,2010
+629,espn,22,2010
+630,espn,23,2010
+631,espn,24,2010
+632,espn,25,2010
+633,espn,26,2010
+634,espn,27,2010
+635,espn,28,2010
+636,espn,29,2010
+637,espn,30,2010
+638,espn,31,2010
+639,espn,32,2010
+640,espn,1,2011
+641,espn,2,2011
+642,espn,3,2011
+643,espn,4,2011
+644,espn,5,2011
+645,espn,6,2011
+646,espn,7,2011
+647,espn,8,2011
+648,espn,9,2011
+649,espn,10,2011
+650,espn,11,2011
+651,espn,12,2011
+652,espn,13,2011
+653,espn,14,2011
+654,espn,15,2011
+655,espn,16,2011
+656,espn,17,2011
+657,espn,18,2011
+658,espn,19,2011
+659,espn,20,2011
+660,espn,21,2011
+661,espn,22,2011
+662,espn,23,2011
+663,espn,24,2011
+664,espn,25,2011
+665,espn,26,2011
+666,espn,27,2011
+667,espn,28,2011
+668,espn,29,2011
+669,espn,30,2011
+670,espn,31,2011
+671,espn,32,2011
+672,espn,1,2012
+673,espn,2,2012
+674,espn,3,2012
+675,espn,4,2012
+676,espn,5,2012
+677,espn,6,2012
+678,espn,7,2012
+679,espn,8,2012
+680,espn,9,2012
+681,espn,10,2012
+682,espn,11,2012
+683,espn,12,2012
+684,espn,13,2012
+685,espn,14,2012
+686,espn,15,2012
+687,espn,16,2012
+688,espn,17,2012
+689,espn,18,2012
+690,espn,19,2012
+691,espn,20,2012
+692,espn,21,2012
+693,espn,22,2012
+694,espn,23,2012
+695,espn,24,2012
+696,espn,25,2012
+697,espn,26,2012
+698,espn,27,2012
+699,espn,28,2012
+700,espn,29,2012
+701,espn,30,2012
+702,espn,31,2012
+703,espn,32,2012
+704,wins,1,2002
+705,wins,2,2002
+706,wins,3,2002
+707,wins,4,2002
+708,wins,5,2002
+709,wins,6,2002
+710,wins,7,2002
+711,wins,8,2002
+712,wins,9,2002
+713,wins,10,2002
+714,wins,11,2002
+715,wins,12,2002
+716,wins,13,2002
+717,wins,14,2002
+718,wins,15,2002
+719,wins,16,2002
+720,wins,17,2002
+721,wins,18,2002
+722,wins,19,2002
+723,wins,20,2002
+724,wins,21,2002
+725,wins,22,2002
+726,wins,23,2002
+727,wins,24,2002
+728,wins,25,2002
+729,wins,26,2002
+730,wins,27,2002
+731,wins,28,2002
+732,wins,29,2002
+733,wins,30,2002
+734,wins,31,2002
+735,wins,32,2002
+736,wins,1,2003
+737,wins,2,2003
+738,wins,3,2003
+739,wins,4,2003
+740,wins,5,2003
+741,wins,6,2003
+742,wins,7,2003
+743,wins,8,2003
+744,wins,9,2003
+745,wins,10,2003
+746,wins,11,2003
+747,wins,12,2003
+748,wins,13,2003
+749,wins,14,2003
+750,wins,15,2003
+751,wins,16,2003
+752,wins,17,2003
+753,wins,18,2003
+754,wins,19,2003
+755,wins,20,2003
+756,wins,21,2003
+757,wins,22,2003
+758,wins,23,2003
+759,wins,24,2003
+760,wins,25,2003
+761,wins,26,2003
+762,wins,27,2003
+763,wins,28,2003
+764,wins,29,2003
+765,wins,30,2003
+766,wins,31,2003
+767,wins,32,2003
+768,wins,1,2004
+769,wins,2,2004
+770,wins,3,2004
+771,wins,4,2004
+772,wins,5,2004
+773,wins,6,2004
+774,wins,7,2004
+775,wins,8,2004
+776,wins,9,2004
+777,wins,10,2004
+778,wins,11,2004
+779,wins,12,2004
+780,wins,13,2004
+781,wins,14,2004
+782,wins,15,2004
+783,wins,16,2004
+784,wins,17,2004
+785,wins,18,2004
+786,wins,19,2004
+787,wins,20,2004
+788,wins,21,2004
+789,wins,22,2004
+790,wins,23,2004
+791,wins,24,2004
+792,wins,25,2004
+793,wins,26,2004
+794,wins,27,2004
+795,wins,28,2004
+796,wins,29,2004
+797,wins,30,2004
+798,wins,31,2004
+799,wins,32,2004
+800,wins,1,2005
+801,wins,2,2005
+802,wins,3,2005
+803,wins,4,2005
+804,wins,5,2005
+805,wins,6,2005
+806,wins,7,2005
+807,wins,8,2005
+808,wins,9,2005
+809,wins,10,2005
+810,wins,11,2005
+811,wins,12,2005
+812,wins,13,2005
+813,wins,14,2005
+814,wins,15,2005
+815,wins,16,2005
+816,wins,17,2005
+817,wins,18,2005
+818,wins,19,2005
+819,wins,20,2005
+820,wins,21,2005
+821,wins,22,2005
+822,wins,23,2005
+823,wins,24,2005
+824,wins,25,2005
+825,wins,26,2005
+826,wins,27,2005
+827,wins,28,2005
+828,wins,29,2005
+829,wins,30,2005
+830,wins,31,2005
+831,wins,32,2005
+832,wins,1,2006
+833,wins,2,2006
+834,wins,3,2006
+835,wins,4,2006
+836,wins,5,2006
+837,wins,6,2006
+838,wins,7,2006
+839,wins,8,2006
+840,wins,9,2006
+841,wins,10,2006
+842,wins,11,2006
+843,wins,12,2006
+844,wins,13,2006
+845,wins,14,2006
+846,wins,15,2006
+847,wins,16,2006
+848,wins,17,2006
+849,wins,18,2006
+850,wins,19,2006
+851,wins,20,2006
+852,wins,21,2006
+853,wins,22,2006
+854,wins,23,2006
+855,wins,24,2006
+856,wins,25,2006
+857,wins,26,2006
+858,wins,27,2006
+859,wins,28,2006
+860,wins,29,2006
+861,wins,30,2006
+862,wins,31,2006
+863,wins,32,2006
+864,wins,1,2007
+865,wins,2,2007
+866,wins,3,2007
+867,wins,4,2007
+868,wins,5,2007
+869,wins,6,2007
+870,wins,7,2007
+871,wins,8,2007
+872,wins,9,2007
+873,wins,10,2007
+874,wins,11,2007
+875,wins,12,2007
+876,wins,13,2007
+877,wins,14,2007
+878,wins,15,2007
+879,wins,16,2007
+880,wins,17,2007
+881,wins,18,2007
+882,wins,19,2007
+883,wins,20,2007
+884,wins,21,2007
+885,wins,22,2007
+886,wins,23,2007
+887,wins,24,2007
+888,wins,25,2007
+889,wins,26,2007
+890,wins,27,2007
+891,wins,28,2007
+892,wins,29,2007
+893,wins,30,2007
+894,wins,31,2007
+895,wins,32,2007
+896,wins,1,2008
+897,wins,2,2008
+898,wins,3,2008
+899,wins,4,2008
+900,wins,5,2008
+901,wins,6,2008
+902,wins,7,2008
+903,wins,8,2008
+904,wins,9,2008
+905,wins,10,2008
+906,wins,11,2008
+907,wins,12,2008
+908,wins,13,2008
+909,wins,14,2008
+910,wins,15,2008
+911,wins,16,2008
+912,wins,17,2008
+913,wins,18,2008
+914,wins,19,2008
+915,wins,20,2008
+916,wins,21,2008
+917,wins,22,2008
+918,wins,23,2008
+919,wins,24,2008
+920,wins,25,2008
+921,wins,26,2008
+922,wins,27,2008
+923,wins,28,2008
+924,wins,29,2008
+925,wins,30,2008
+926,wins,31,2008
+927,wins,32,2008
+928,wins,1,2009
+929,wins,2,2009
+930,wins,3,2009
+931,wins,4,2009
+932,wins,5,2009
+933,wins,6,2009
+934,wins,7,2009
+935,wins,8,2009
+936,wins,9,2009
+937,wins,10,2009
+938,wins,11,2009
+939,wins,12,2009
+940,wins,13,2009
+941,wins,14,2009
+942,wins,15,2009
+943,wins,16,2009
+944,wins,17,2009
+945,wins,18,2009
+946,wins,19,2009
+947,wins,20,2009
+948,wins,21,2009
+949,wins,22,2009
+950,wins,23,2009
+951,wins,24,2009
+952,wins,25,2009
+953,wins,26,2009
+954,wins,27,2009
+955,wins,28,2009
+956,wins,29,2009
+957,wins,30,2009
+958,wins,31,2009
+959,wins,32,2009
+960,wins,1,2010
+961,wins,2,2010
+962,wins,3,2010
+963,wins,4,2010
+964,wins,5,2010
+965,wins,6,2010
+966,wins,7,2010
+967,wins,8,2010
+968,wins,9,2010
+969,wins,10,2010
+970,wins,11,2010
+971,wins,12,2010
+972,wins,13,2010
+973,wins,14,2010
+974,wins,15,2010
+975,wins,16,2010
+976,wins,17,2010
+977,wins,18,2010
+978,wins,19,2010
+979,wins,20,2010
+980,wins,21,2010
+981,wins,22,2010
+982,wins,23,2010
+983,wins,24,2010
+984,wins,25,2010
+985,wins,26,2010
+986,wins,27,2010
+987,wins,28,2010
+988,wins,29,2010
+989,wins,30,2010
+990,wins,31,2010
+991,wins,32,2010
+992,wins,1,2011
+993,wins,2,2011
+994,wins,3,2011
+995,wins,4,2011
+996,wins,5,2011
+997,wins,6,2011
+998,wins,7,2011
+999,wins,8,2011
+1000,wins,9,2011
+1001,wins,10,2011
+1002,wins,11,2011
+1003,wins,12,2011
+1004,wins,13,2011
+1005,wins,14,2011
+1006,wins,15,2011
+1007,wins,16,2011
+1008,wins,17,2011
+1009,wins,18,2011
+1010,wins,19,2011
+1011,wins,20,2011
+1012,wins,21,2011
+1013,wins,22,2011
+1014,wins,23,2011
+1015,wins,24,2011
+1016,wins,25,2011
+1017,wins,26,2011
+1018,wins,27,2011
+1019,wins,28,2011
+1020,wins,29,2011
+1021,wins,30,2011
+1022,wins,31,2011
+1023,wins,32,2011
+1024,wins,1,2012
+1025,wins,2,2012
+1026,wins,3,2012
+1027,wins,4,2012
+1028,wins,5,2012
+1029,wins,6,2012
+1030,wins,7,2012
+1031,wins,8,2012
+1032,wins,9,2012
+1033,wins,10,2012
+1034,wins,11,2012
+1035,wins,12,2012
+1036,wins,13,2012
+1037,wins,14,2012
+1038,wins,15,2012
+1039,wins,16,2012
+1040,wins,17,2012
+1041,wins,18,2012
+1042,wins,19,2012
+1043,wins,20,2012
+1044,wins,21,2012
+1045,wins,22,2012
+1046,wins,23,2012
+1047,wins,24,2012
+1048,wins,25,2012
+1049,wins,26,2012
+1050,wins,27,2012
+1051,wins,28,2012
+1052,wins,29,2012
+1053,wins,30,2012
+1054,wins,31,2012
+1055,wins,32,2012
+1056,optimal,1,2002
+1057,optimal,2,2002
+1058,optimal,3,2002
+1059,optimal,4,2002
+1060,optimal,5,2002
+1061,optimal,6,2002
+1062,optimal,7,2002
+1063,optimal,8,2002
+1064,optimal,9,2002
+1065,optimal,10,2002
+1066,optimal,11,2002
+1067,optimal,12,2002
+1068,optimal,13,2002
+1069,optimal,14,2002
+1070,optimal,15,2002
+1071,optimal,16,2002
+1072,optimal,17,2002
+1073,optimal,18,2002
+1074,optimal,19,2002
+1075,optimal,20,2002
+1076,optimal,21,2002
+1077,optimal,22,2002
+1078,optimal,23,2002
+1079,optimal,24,2002
+1080,optimal,25,2002
+1081,optimal,26,2002
+1082,optimal,27,2002
+1083,optimal,28,2002
+1084,optimal,29,2002
+1085,optimal,30,2002
+1086,optimal,31,2002
+1087,optimal,32,2002
+1088,optimal,1,2003
+1089,optimal,2,2003
+1090,optimal,3,2003
+1091,optimal,4,2003
+1092,optimal,5,2003
+1093,optimal,6,2003
+1094,optimal,7,2003
+1095,optimal,8,2003
+1096,optimal,9,2003
+1097,optimal,10,2003
+1098,optimal,11,2003
+1099,optimal,12,2003
+1100,optimal,13,2003
+1101,optimal,14,2003
+1102,optimal,15,2003
+1103,optimal,16,2003
+1104,optimal,17,2003
+1105,optimal,18,2003
+1106,optimal,19,2003
+1107,optimal,20,2003
+1108,optimal,21,2003
+1109,optimal,22,2003
+1110,optimal,23,2003
+1111,optimal,24,2003
+1112,optimal,25,2003
+1113,optimal,26,2003
+1114,optimal,27,2003
+1115,optimal,28,2003
+1116,optimal,29,2003
+1117,optimal,30,2003
+1118,optimal,31,2003
+1119,optimal,32,2003
+1120,optimal,1,2004
+1121,optimal,2,2004
+1122,optimal,3,2004
+1123,optimal,4,2004
+1124,optimal,5,2004
+1125,optimal,6,2004
+1126,optimal,7,2004
+1127,optimal,8,2004
+1128,optimal,9,2004
+1129,optimal,10,2004
+1130,optimal,11,2004
+1131,optimal,12,2004
+1132,optimal,13,2004
+1133,optimal,14,2004
+1134,optimal,15,2004
+1135,optimal,16,2004
+1136,optimal,17,2004
+1137,optimal,18,2004
+1138,optimal,19,2004
+1139,optimal,20,2004
+1140,optimal,21,2004
+1141,optimal,22,2004
+1142,optimal,23,2004
+1143,optimal,24,2004
+1144,optimal,25,2004
+1145,optimal,26,2004
+1146,optimal,27,2004
+1147,optimal,28,2004
+1148,optimal,29,2004
+1149,optimal,30,2004
+1150,optimal,31,2004
+1151,optimal,32,2004
+1152,optimal,1,2005
+1153,optimal,2,2005
+1154,optimal,3,2005
+1155,optimal,4,2005
+1156,optimal,5,2005
+1157,optimal,6,2005
+1158,optimal,7,2005
+1159,optimal,8,2005
+1160,optimal,9,2005
+1161,optimal,10,2005
+1162,optimal,11,2005
+1163,optimal,12,2005
+1164,optimal,13,2005
+1165,optimal,14,2005
+1166,optimal,15,2005
+1167,optimal,16,2005
+1168,optimal,17,2005
+1169,optimal,18,2005
+1170,optimal,19,2005
+1171,optimal,20,2005
+1172,optimal,21,2005
+1173,optimal,22,2005
+1174,optimal,23,2005
+1175,optimal,24,2005
+1176,optimal,25,2005
+1177,optimal,26,2005
+1178,optimal,27,2005
+1179,optimal,28,2005
+1180,optimal,29,2005
+1181,optimal,30,2005
+1182,optimal,31,2005
+1183,optimal,32,2005
+1184,optimal,1,2006
+1185,optimal,2,2006
+1186,optimal,3,2006
+1187,optimal,4,2006
+1188,optimal,5,2006
+1189,optimal,6,2006
+1190,optimal,7,2006
+1191,optimal,8,2006
+1192,optimal,9,2006
+1193,optimal,10,2006
+1194,optimal,11,2006
+1195,optimal,12,2006
+1196,optimal,13,2006
+1197,optimal,14,2006
+1198,optimal,15,2006
+1199,optimal,16,2006
+1200,optimal,17,2006
+1201,optimal,18,2006
+1202,optimal,19,2006
+1203,optimal,20,2006
+1204,optimal,21,2006
+1205,optimal,22,2006
+1206,optimal,23,2006
+1207,optimal,24,2006
+1208,optimal,25,2006
+1209,optimal,26,2006
+1210,optimal,27,2006
+1211,optimal,28,2006
+1212,optimal,29,2006
+1213,optimal,30,2006
+1214,optimal,31,2006
+1215,optimal,32,2006
+1216,optimal,1,2007
+1217,optimal,2,2007
+1218,optimal,3,2007
+1219,optimal,4,2007
+1220,optimal,5,2007
+1221,optimal,6,2007
+1222,optimal,7,2007
+1223,optimal,8,2007
+1224,optimal,9,2007
+1225,optimal,10,2007
+1226,optimal,11,2007
+1227,optimal,12,2007
+1228,optimal,13,2007
+1229,optimal,14,2007
+1230,optimal,15,2007
+1231,optimal,16,2007
+1232,optimal,17,2007
+1233,optimal,18,2007
+1234,optimal,19,2007
+1235,optimal,20,2007
+1236,optimal,21,2007
+1237,optimal,22,2007
+1238,optimal,23,2007
+1239,optimal,24,2007
+1240,optimal,25,2007
+1241,optimal,26,2007
+1242,optimal,27,2007
+1243,optimal,28,2007
+1244,optimal,29,2007
+1245,optimal,30,2007
+1246,optimal,31,2007
+1247,optimal,32,2007
+1248,optimal,1,2008
+1249,optimal,2,2008
+1250,optimal,3,2008
+1251,optimal,4,2008
+1252,optimal,5,2008
+1253,optimal,6,2008
+1254,optimal,7,2008
+1255,optimal,8,2008
+1256,optimal,9,2008
+1257,optimal,10,2008
+1258,optimal,11,2008
+1259,optimal,12,2008
+1260,optimal,13,2008
+1261,optimal,14,2008
+1262,optimal,15,2008
+1263,optimal,16,2008
+1264,optimal,17,2008
+1265,optimal,18,2008
+1266,optimal,19,2008
+1267,optimal,20,2008
+1268,optimal,21,2008
+1269,optimal,22,2008
+1270,optimal,23,2008
+1271,optimal,24,2008
+1272,optimal,25,2008
+1273,optimal,26,2008
+1274,optimal,27,2008
+1275,optimal,28,2008
+1276,optimal,29,2008
+1277,optimal,30,2008
+1278,optimal,31,2008
+1279,optimal,32,2008
+1280,optimal,1,2009
+1281,optimal,2,2009
+1282,optimal,3,2009
+1283,optimal,4,2009
+1284,optimal,5,2009
+1285,optimal,6,2009
+1286,optimal,7,2009
+1287,optimal,8,2009
+1288,optimal,9,2009
+1289,optimal,10,2009
+1290,optimal,11,2009
+1291,optimal,12,2009
+1292,optimal,13,2009
+1293,optimal,14,2009
+1294,optimal,15,2009
+1295,optimal,16,2009
+1296,optimal,17,2009
+1297,optimal,18,2009
+1298,optimal,19,2009
+1299,optimal,20,2009
+1300,optimal,21,2009
+1301,optimal,22,2009
+1302,optimal,23,2009
+1303,optimal,24,2009
+1304,optimal,25,2009
+1305,optimal,26,2009
+1306,optimal,27,2009
+1307,optimal,28,2009
+1308,optimal,29,2009
+1309,optimal,30,2009
+1310,optimal,31,2009
+1311,optimal,32,2009
+1312,optimal,1,2010
+1313,optimal,2,2010
+1314,optimal,3,2010
+1315,optimal,4,2010
+1316,optimal,5,2010
+1317,optimal,6,2010
+1318,optimal,7,2010
+1319,optimal,8,2010
+1320,optimal,9,2010
+1321,optimal,10,2010
+1322,optimal,11,2010
+1323,optimal,12,2010
+1324,optimal,13,2010
+1325,optimal,14,2010
+1326,optimal,15,2010
+1327,optimal,16,2010
+1328,optimal,17,2010
+1329,optimal,18,2010
+1330,optimal,19,2010
+1331,optimal,20,2010
+1332,optimal,21,2010
+1333,optimal,22,2010
+1334,optimal,23,2010
+1335,optimal,24,2010
+1336,optimal,25,2010
+1337,optimal,26,2010
+1338,optimal,27,2010
+1339,optimal,28,2010
+1340,optimal,29,2010
+1341,optimal,30,2010
+1342,optimal,31,2010
+1343,optimal,32,2010
+1344,optimal,1,2011
+1345,optimal,2,2011
+1346,optimal,3,2011
+1347,optimal,4,2011
+1348,optimal,5,2011
+1349,optimal,6,2011
+1350,optimal,7,2011
+1351,optimal,8,2011
+1352,optimal,9,2011
+1353,optimal,10,2011
+1354,optimal,11,2011
+1355,optimal,12,2011
+1356,optimal,13,2011
+1357,optimal,14,2011
+1358,optimal,15,2011
+1359,optimal,16,2011
+1360,optimal,17,2011
+1361,optimal,18,2011
+1362,optimal,19,2011
+1363,optimal,20,2011
+1364,optimal,21,2011
+1365,optimal,22,2011
+1366,optimal,23,2011
+1367,optimal,24,2011
+1368,optimal,25,2011
+1369,optimal,26,2011
+1370,optimal,27,2011
+1371,optimal,28,2011
+1372,optimal,29,2011
+1373,optimal,30,2011
+1374,optimal,31,2011
+1375,optimal,32,2011
+1376,optimal,1,2012
+1377,optimal,2,2012
+1378,optimal,3,2012
+1379,optimal,4,2012
+1380,optimal,5,2012
+1381,optimal,6,2012
+1382,optimal,7,2012
+1383,optimal,8,2012
+1384,optimal,9,2012
+1385,optimal,10,2012
+1386,optimal,11,2012
+1387,optimal,12,2012
+1388,optimal,13,2012
+1389,optimal,14,2012
+1390,optimal,15,2012
+1391,optimal,16,2012
+1392,optimal,17,2012
+1393,optimal,18,2012
+1394,optimal,19,2012
+1395,optimal,20,2012
+1396,optimal,21,2012
+1397,optimal,22,2012
+1398,optimal,23,2012
+1399,optimal,24,2012
+1400,optimal,25,2012
+1401,optimal,26,2012
+1402,optimal,27,2012
+1403,optimal,28,2012
+1404,optimal,29,2012
+1405,optimal,30,2012
+1406,optimal,31,2012
+1407,optimal,32,2012
+1408,btl,1,2002
+1409,btl,2,2002
+1410,btl,3,2002
+1411,btl,4,2002
+1412,btl,5,2002
+1413,btl,6,2002
+1414,btl,7,2002
+1415,btl,8,2002
+1416,btl,9,2002
+1417,btl,10,2002
+1418,btl,11,2002
+1419,btl,12,2002
+1420,btl,13,2002
+1421,btl,14,2002
+1422,btl,15,2002
+1423,btl,16,2002
+1424,btl,17,2002
+1425,btl,18,2002
+1426,btl,19,2002
+1427,btl,20,2002
+1428,btl,21,2002
+1429,btl,22,2002
+1430,btl,23,2002
+1431,btl,24,2002
+1432,btl,25,2002
+1433,btl,26,2002
+1434,btl,27,2002
+1435,btl,28,2002
+1436,btl,29,2002
+1437,btl,30,2002
+1438,btl,31,2002
+1439,btl,32,2002
+1440,btl,1,2003
+1441,btl,2,2003
+1442,btl,3,2003
+1443,btl,4,2003
+1444,btl,5,2003
+1445,btl,6,2003
+1446,btl,7,2003
+1447,btl,8,2003
+1448,btl,9,2003
+1449,btl,10,2003
+1450,btl,11,2003
+1451,btl,12,2003
+1452,btl,13,2003
+1453,btl,14,2003
+1454,btl,15,2003
+1455,btl,16,2003
+1456,btl,17,2003
+1457,btl,18,2003
+1458,btl,19,2003
+1459,btl,20,2003
+1460,btl,21,2003
+1461,btl,22,2003
+1462,btl,23,2003
+1463,btl,24,2003
+1464,btl,25,2003
+1465,btl,26,2003
+1466,btl,27,2003
+1467,btl,28,2003
+1468,btl,29,2003
+1469,btl,30,2003
+1470,btl,31,2003
+1471,btl,32,2003
+1472,btl,1,2004
+1473,btl,2,2004
+1474,btl,3,2004
+1475,btl,4,2004
+1476,btl,5,2004
+1477,btl,6,2004
+1478,btl,7,2004
+1479,btl,8,2004
+1480,btl,9,2004
+1481,btl,10,2004
+1482,btl,11,2004
+1483,btl,12,2004
+1484,btl,13,2004
+1485,btl,14,2004
+1486,btl,15,2004
+1487,btl,16,2004
+1488,btl,17,2004
+1489,btl,18,2004
+1490,btl,19,2004
+1491,btl,20,2004
+1492,btl,21,2004
+1493,btl,22,2004
+1494,btl,23,2004
+1495,btl,24,2004
+1496,btl,25,2004
+1497,btl,26,2004
+1498,btl,27,2004
+1499,btl,28,2004
+1500,btl,29,2004
+1501,btl,30,2004
+1502,btl,31,2004
+1503,btl,32,2004
+1504,btl,1,2005
+1505,btl,2,2005
+1506,btl,3,2005
+1507,btl,4,2005
+1508,btl,5,2005
+1509,btl,6,2005
+1510,btl,7,2005
+1511,btl,8,2005
+1512,btl,9,2005
+1513,btl,10,2005
+1514,btl,11,2005
+1515,btl,12,2005
+1516,btl,13,2005
+1517,btl,14,2005
+1518,btl,15,2005
+1519,btl,16,2005
+1520,btl,17,2005
+1521,btl,18,2005
+1522,btl,19,2005
+1523,btl,20,2005
+1524,btl,21,2005
+1525,btl,22,2005
+1526,btl,23,2005
+1527,btl,24,2005
+1528,btl,25,2005
+1529,btl,26,2005
+1530,btl,27,2005
+1531,btl,28,2005
+1532,btl,29,2005
+1533,btl,30,2005
+1534,btl,31,2005
+1535,btl,32,2005
+1536,btl,1,2006
+1537,btl,2,2006
+1538,btl,3,2006
+1539,btl,4,2006
+1540,btl,5,2006
+1541,btl,6,2006
+1542,btl,7,2006
+1543,btl,8,2006
+1544,btl,9,2006
+1545,btl,10,2006
+1546,btl,11,2006
+1547,btl,12,2006
+1548,btl,13,2006
+1549,btl,14,2006
+1550,btl,15,2006
+1551,btl,16,2006
+1552,btl,17,2006
+1553,btl,18,2006
+1554,btl,19,2006
+1555,btl,20,2006
+1556,btl,21,2006
+1557,btl,22,2006
+1558,btl,23,2006
+1559,btl,24,2006
+1560,btl,25,2006
+1561,btl,26,2006
+1562,btl,27,2006
+1563,btl,28,2006
+1564,btl,29,2006
+1565,btl,30,2006
+1566,btl,31,2006
+1567,btl,32,2006
+1568,btl,1,2007
+1569,btl,2,2007
+1570,btl,3,2007
+1571,btl,4,2007
+1572,btl,5,2007
+1573,btl,6,2007
+1574,btl,7,2007
+1575,btl,8,2007
+1576,btl,9,2007
+1577,btl,10,2007
+1578,btl,11,2007
+1579,btl,12,2007
+1580,btl,13,2007
+1581,btl,14,2007
+1582,btl,15,2007
+1583,btl,16,2007
+1584,btl,17,2007
+1585,btl,18,2007
+1586,btl,19,2007
+1587,btl,20,2007
+1588,btl,21,2007
+1589,btl,22,2007
+1590,btl,23,2007
+1591,btl,24,2007
+1592,btl,25,2007
+1593,btl,26,2007
+1594,btl,27,2007
+1595,btl,28,2007
+1596,btl,29,2007
+1597,btl,30,2007
+1598,btl,31,2007
+1599,btl,32,2007
+1600,btl,1,2008
+1601,btl,2,2008
+1602,btl,3,2008
+1603,btl,4,2008
+1604,btl,5,2008
+1605,btl,6,2008
+1606,btl,7,2008
+1607,btl,8,2008
+1608,btl,9,2008
+1609,btl,10,2008
+1610,btl,11,2008
+1611,btl,12,2008
+1612,btl,13,2008
+1613,btl,14,2008
+1614,btl,15,2008
+1615,btl,16,2008
+1616,btl,17,2008
+1617,btl,18,2008
+1618,btl,19,2008
+1619,btl,20,2008
+1620,btl,21,2008
+1621,btl,22,2008
+1622,btl,23,2008
+1623,btl,24,2008
+1624,btl,25,2008
+1625,btl,26,2008
+1626,btl,27,2008
+1627,btl,28,2008
+1628,btl,29,2008
+1629,btl,30,2008
+1630,btl,31,2008
+1631,btl,32,2008
+1632,btl,1,2009
+1633,btl,2,2009
+1634,btl,3,2009
+1635,btl,4,2009
+1636,btl,5,2009
+1637,btl,6,2009
+1638,btl,7,2009
+1639,btl,8,2009
+1640,btl,9,2009
+1641,btl,10,2009
+1642,btl,11,2009
+1643,btl,12,2009
+1644,btl,13,2009
+1645,btl,14,2009
+1646,btl,15,2009
+1647,btl,16,2009
+1648,btl,17,2009
+1649,btl,18,2009
+1650,btl,19,2009
+1651,btl,20,2009
+1652,btl,21,2009
+1653,btl,22,2009
+1654,btl,23,2009
+1655,btl,24,2009
+1656,btl,25,2009
+1657,btl,26,2009
+1658,btl,27,2009
+1659,btl,28,2009
+1660,btl,29,2009
+1661,btl,30,2009
+1662,btl,31,2009
+1663,btl,32,2009
+1664,btl,1,2010
+1665,btl,2,2010
+1666,btl,3,2010
+1667,btl,4,2010
+1668,btl,5,2010
+1669,btl,6,2010
+1670,btl,7,2010
+1671,btl,8,2010
+1672,btl,9,2010
+1673,btl,10,2010
+1674,btl,11,2010
+1675,btl,12,2010
+1676,btl,13,2010
+1677,btl,14,2010
+1678,btl,15,2010
+1679,btl,16,2010
+1680,btl,17,2010
+1681,btl,18,2010
+1682,btl,19,2010
+1683,btl,20,2010
+1684,btl,21,2010
+1685,btl,22,2010
+1686,btl,23,2010
+1687,btl,24,2010
+1688,btl,25,2010
+1689,btl,26,2010
+1690,btl,27,2010
+1691,btl,28,2010
+1692,btl,29,2010
+1693,btl,30,2010
+1694,btl,31,2010
+1695,btl,32,2010
+1696,btl,1,2011
+1697,btl,2,2011
+1698,btl,3,2011
+1699,btl,4,2011
+1700,btl,5,2011
+1701,btl,6,2011
+1702,btl,7,2011
+1703,btl,8,2011
+1704,btl,9,2011
+1705,btl,10,2011
+1706,btl,11,2011
+1707,btl,12,2011
+1708,btl,13,2011
+1709,btl,14,2011
+1710,btl,15,2011
+1711,btl,16,2011
+1712,btl,17,2011
+1713,btl,18,2011
+1714,btl,19,2011
+1715,btl,20,2011
+1716,btl,21,2011
+1717,btl,22,2011
+1718,btl,23,2011
+1719,btl,24,2011
+1720,btl,25,2011
+1721,btl,26,2011
+1722,btl,27,2011
+1723,btl,28,2011
+1724,btl,29,2011
+1725,btl,30,2011
+1726,btl,31,2011
+1727,btl,32,2011
+1728,btl,1,2012
+1729,btl,2,2012
+1730,btl,3,2012
+1731,btl,4,2012
+1732,btl,5,2012
+1733,btl,6,2012
+1734,btl,7,2012
+1735,btl,8,2012
+1736,btl,9,2012
+1737,btl,10,2012
+1738,btl,11,2012
+1739,btl,12,2012
+1740,btl,13,2012
+1741,btl,14,2012
+1742,btl,15,2012
+1743,btl,16,2012
+1744,btl,17,2012
+1745,btl,18,2012
+1746,btl,19,2012
+1747,btl,20,2012
+1748,btl,21,2012
+1749,btl,22,2012
+1750,btl,23,2012
+1751,btl,24,2012
+1752,btl,25,2012
+1753,btl,26,2012
+1754,btl,27,2012
+1755,btl,28,2012
+1756,btl,29,2012
+1757,btl,30,2012
+1758,btl,31,2012
+1759,btl,32,2012
+1760,pythagorean wins,1,2002
+1761,pythagorean wins,2,2002
+1762,pythagorean wins,3,2002
+1763,pythagorean wins,4,2002
+1764,pythagorean wins,5,2002
+1765,pythagorean wins,6,2002
+1766,pythagorean wins,7,2002
+1767,pythagorean wins,8,2002
+1768,pythagorean wins,9,2002
+1769,pythagorean wins,10,2002
+1770,pythagorean wins,11,2002
+1771,pythagorean wins,12,2002
+1772,pythagorean wins,13,2002
+1773,pythagorean wins,14,2002
+1774,pythagorean wins,15,2002
+1775,pythagorean wins,16,2002
+1776,pythagorean wins,17,2002
+1777,pythagorean wins,18,2002
+1778,pythagorean wins,19,2002
+1779,pythagorean wins,20,2002
+1780,pythagorean wins,21,2002
+1781,pythagorean wins,22,2002
+1782,pythagorean wins,23,2002
+1783,pythagorean wins,24,2002
+1784,pythagorean wins,25,2002
+1785,pythagorean wins,26,2002
+1786,pythagorean wins,27,2002
+1787,pythagorean wins,28,2002
+1788,pythagorean wins,29,2002
+1789,pythagorean wins,30,2002
+1790,pythagorean wins,31,2002
+1791,pythagorean wins,32,2002
+1792,pythagorean wins,1,2003
+1793,pythagorean wins,2,2003
+1794,pythagorean wins,3,2003
+1795,pythagorean wins,4,2003
+1796,pythagorean wins,5,2003
+1797,pythagorean wins,6,2003
+1798,pythagorean wins,7,2003
+1799,pythagorean wins,8,2003
+1800,pythagorean wins,9,2003
+1801,pythagorean wins,10,2003
+1802,pythagorean wins,11,2003
+1803,pythagorean wins,12,2003
+1804,pythagorean wins,13,2003
+1805,pythagorean wins,14,2003
+1806,pythagorean wins,15,2003
+1807,pythagorean wins,16,2003
+1808,pythagorean wins,17,2003
+1809,pythagorean wins,18,2003
+1810,pythagorean wins,19,2003
+1811,pythagorean wins,20,2003
+1812,pythagorean wins,21,2003
+1813,pythagorean wins,22,2003
+1814,pythagorean wins,23,2003
+1815,pythagorean wins,24,2003
+1816,pythagorean wins,25,2003
+1817,pythagorean wins,26,2003
+1818,pythagorean wins,27,2003
+1819,pythagorean wins,28,2003
+1820,pythagorean wins,29,2003
+1821,pythagorean wins,30,2003
+1822,pythagorean wins,31,2003
+1823,pythagorean wins,32,2003
+1824,pythagorean wins,1,2004
+1825,pythagorean wins,2,2004
+1826,pythagorean wins,3,2004
+1827,pythagorean wins,4,2004
+1828,pythagorean wins,5,2004
+1829,pythagorean wins,6,2004
+1830,pythagorean wins,7,2004
+1831,pythagorean wins,8,2004
+1832,pythagorean wins,9,2004
+1833,pythagorean wins,10,2004
+1834,pythagorean wins,11,2004
+1835,pythagorean wins,12,2004
+1836,pythagorean wins,13,2004
+1837,pythagorean wins,14,2004
+1838,pythagorean wins,15,2004
+1839,pythagorean wins,16,2004
+1840,pythagorean wins,17,2004
+1841,pythagorean wins,18,2004
+1842,pythagorean wins,19,2004
+1843,pythagorean wins,20,2004
+1844,pythagorean wins,21,2004
+1845,pythagorean wins,22,2004
+1846,pythagorean wins,23,2004
+1847,pythagorean wins,24,2004
+1848,pythagorean wins,25,2004
+1849,pythagorean wins,26,2004
+1850,pythagorean wins,27,2004
+1851,pythagorean wins,28,2004
+1852,pythagorean wins,29,2004
+1853,pythagorean wins,30,2004
+1854,pythagorean wins,31,2004
+1855,pythagorean wins,32,2004
+1856,pythagorean wins,1,2005
+1857,pythagorean wins,2,2005
+1858,pythagorean wins,3,2005
+1859,pythagorean wins,4,2005
+1860,pythagorean wins,5,2005
+1861,pythagorean wins,6,2005
+1862,pythagorean wins,7,2005
+1863,pythagorean wins,8,2005
+1864,pythagorean wins,9,2005
+1865,pythagorean wins,10,2005
+1866,pythagorean wins,11,2005
+1867,pythagorean wins,12,2005
+1868,pythagorean wins,13,2005
+1869,pythagorean wins,14,2005
+1870,pythagorean wins,15,2005
+1871,pythagorean wins,16,2005
+1872,pythagorean wins,17,2005
+1873,pythagorean wins,18,2005
+1874,pythagorean wins,19,2005
+1875,pythagorean wins,20,2005
+1876,pythagorean wins,21,2005
+1877,pythagorean wins,22,2005
+1878,pythagorean wins,23,2005
+1879,pythagorean wins,24,2005
+1880,pythagorean wins,25,2005
+1881,pythagorean wins,26,2005
+1882,pythagorean wins,27,2005
+1883,pythagorean wins,28,2005
+1884,pythagorean wins,29,2005
+1885,pythagorean wins,30,2005
+1886,pythagorean wins,31,2005
+1887,pythagorean wins,32,2005
+1888,pythagorean wins,1,2006
+1889,pythagorean wins,2,2006
+1890,pythagorean wins,3,2006
+1891,pythagorean wins,4,2006
+1892,pythagorean wins,5,2006
+1893,pythagorean wins,6,2006
+1894,pythagorean wins,7,2006
+1895,pythagorean wins,8,2006
+1896,pythagorean wins,9,2006
+1897,pythagorean wins,10,2006
+1898,pythagorean wins,11,2006
+1899,pythagorean wins,12,2006
+1900,pythagorean wins,13,2006
+1901,pythagorean wins,14,2006
+1902,pythagorean wins,15,2006
+1903,pythagorean wins,16,2006
+1904,pythagorean wins,17,2006
+1905,pythagorean wins,18,2006
+1906,pythagorean wins,19,2006
+1907,pythagorean wins,20,2006
+1908,pythagorean wins,21,2006
+1909,pythagorean wins,22,2006
+1910,pythagorean wins,23,2006
+1911,pythagorean wins,24,2006
+1912,pythagorean wins,25,2006
+1913,pythagorean wins,26,2006
+1914,pythagorean wins,27,2006
+1915,pythagorean wins,28,2006
+1916,pythagorean wins,29,2006
+1917,pythagorean wins,30,2006
+1918,pythagorean wins,31,2006
+1919,pythagorean wins,32,2006
+1920,pythagorean wins,1,2007
+1921,pythagorean wins,2,2007
+1922,pythagorean wins,3,2007
+1923,pythagorean wins,4,2007
+1924,pythagorean wins,5,2007
+1925,pythagorean wins,6,2007
+1926,pythagorean wins,7,2007
+1927,pythagorean wins,8,2007
+1928,pythagorean wins,9,2007
+1929,pythagorean wins,10,2007
+1930,pythagorean wins,11,2007
+1931,pythagorean wins,12,2007
+1932,pythagorean wins,13,2007
+1933,pythagorean wins,14,2007
+1934,pythagorean wins,15,2007
+1935,pythagorean wins,16,2007
+1936,pythagorean wins,17,2007
+1937,pythagorean wins,18,2007
+1938,pythagorean wins,19,2007
+1939,pythagorean wins,20,2007
+1940,pythagorean wins,21,2007
+1941,pythagorean wins,22,2007
+1942,pythagorean wins,23,2007
+1943,pythagorean wins,24,2007
+1944,pythagorean wins,25,2007
+1945,pythagorean wins,26,2007
+1946,pythagorean wins,27,2007
+1947,pythagorean wins,28,2007
+1948,pythagorean wins,29,2007
+1949,pythagorean wins,30,2007
+1950,pythagorean wins,31,2007
+1951,pythagorean wins,32,2007
+1952,pythagorean wins,1,2008
+1953,pythagorean wins,2,2008
+1954,pythagorean wins,3,2008
+1955,pythagorean wins,4,2008
+1956,pythagorean wins,5,2008
+1957,pythagorean wins,6,2008
+1958,pythagorean wins,7,2008
+1959,pythagorean wins,8,2008
+1960,pythagorean wins,9,2008
+1961,pythagorean wins,10,2008
+1962,pythagorean wins,11,2008
+1963,pythagorean wins,12,2008
+1964,pythagorean wins,13,2008
+1965,pythagorean wins,14,2008
+1966,pythagorean wins,15,2008
+1967,pythagorean wins,16,2008
+1968,pythagorean wins,17,2008
+1969,pythagorean wins,18,2008
+1970,pythagorean wins,19,2008
+1971,pythagorean wins,20,2008
+1972,pythagorean wins,21,2008
+1973,pythagorean wins,22,2008
+1974,pythagorean wins,23,2008
+1975,pythagorean wins,24,2008
+1976,pythagorean wins,25,2008
+1977,pythagorean wins,26,2008
+1978,pythagorean wins,27,2008
+1979,pythagorean wins,28,2008
+1980,pythagorean wins,29,2008
+1981,pythagorean wins,30,2008
+1982,pythagorean wins,31,2008
+1983,pythagorean wins,32,2008
+1984,pythagorean wins,1,2009
+1985,pythagorean wins,2,2009
+1986,pythagorean wins,3,2009
+1987,pythagorean wins,4,2009
+1988,pythagorean wins,5,2009
+1989,pythagorean wins,6,2009
+1990,pythagorean wins,7,2009
+1991,pythagorean wins,8,2009
+1992,pythagorean wins,9,2009
+1993,pythagorean wins,10,2009
+1994,pythagorean wins,11,2009
+1995,pythagorean wins,12,2009
+1996,pythagorean wins,13,2009
+1997,pythagorean wins,14,2009
+1998,pythagorean wins,15,2009
+1999,pythagorean wins,16,2009
+2000,pythagorean wins,17,2009
+2001,pythagorean wins,18,2009
+2002,pythagorean wins,19,2009
+2003,pythagorean wins,20,2009
+2004,pythagorean wins,21,2009
+2005,pythagorean wins,22,2009
+2006,pythagorean wins,23,2009
+2007,pythagorean wins,24,2009
+2008,pythagorean wins,25,2009
+2009,pythagorean wins,26,2009
+2010,pythagorean wins,27,2009
+2011,pythagorean wins,28,2009
+2012,pythagorean wins,29,2009
+2013,pythagorean wins,30,2009
+2014,pythagorean wins,31,2009
+2015,pythagorean wins,32,2009
+2016,pythagorean wins,1,2010
+2017,pythagorean wins,2,2010
+2018,pythagorean wins,3,2010
+2019,pythagorean wins,4,2010
+2020,pythagorean wins,5,2010
+2021,pythagorean wins,6,2010
+2022,pythagorean wins,7,2010
+2023,pythagorean wins,8,2010
+2024,pythagorean wins,9,2010
+2025,pythagorean wins,10,2010
+2026,pythagorean wins,11,2010
+2027,pythagorean wins,12,2010
+2028,pythagorean wins,13,2010
+2029,pythagorean wins,14,2010
+2030,pythagorean wins,15,2010
+2031,pythagorean wins,16,2010
+2032,pythagorean wins,17,2010
+2033,pythagorean wins,18,2010
+2034,pythagorean wins,19,2010
+2035,pythagorean wins,20,2010
+2036,pythagorean wins,21,2010
+2037,pythagorean wins,22,2010
+2038,pythagorean wins,23,2010
+2039,pythagorean wins,24,2010
+2040,pythagorean wins,25,2010
+2041,pythagorean wins,26,2010
+2042,pythagorean wins,27,2010
+2043,pythagorean wins,28,2010
+2044,pythagorean wins,29,2010
+2045,pythagorean wins,30,2010
+2046,pythagorean wins,31,2010
+2047,pythagorean wins,32,2010
+2048,pythagorean wins,1,2011
+2049,pythagorean wins,2,2011
+2050,pythagorean wins,3,2011
+2051,pythagorean wins,4,2011
+2052,pythagorean wins,5,2011
+2053,pythagorean wins,6,2011
+2054,pythagorean wins,7,2011
+2055,pythagorean wins,8,2011
+2056,pythagorean wins,9,2011
+2057,pythagorean wins,10,2011
+2058,pythagorean wins,11,2011
+2059,pythagorean wins,12,2011
+2060,pythagorean wins,13,2011
+2061,pythagorean wins,14,2011
+2062,pythagorean wins,15,2011
+2063,pythagorean wins,16,2011
+2064,pythagorean wins,17,2011
+2065,pythagorean wins,18,2011
+2066,pythagorean wins,19,2011
+2067,pythagorean wins,20,2011
+2068,pythagorean wins,21,2011
+2069,pythagorean wins,22,2011
+2070,pythagorean wins,23,2011
+2071,pythagorean wins,24,2011
+2072,pythagorean wins,25,2011
+2073,pythagorean wins,26,2011
+2074,pythagorean wins,27,2011
+2075,pythagorean wins,28,2011
+2076,pythagorean wins,29,2011
+2077,pythagorean wins,30,2011
+2078,pythagorean wins,31,2011
+2079,pythagorean wins,32,2011
+2080,pythagorean wins,1,2012
+2081,pythagorean wins,2,2012
+2082,pythagorean wins,3,2012
+2083,pythagorean wins,4,2012
+2084,pythagorean wins,5,2012
+2085,pythagorean wins,6,2012
+2086,pythagorean wins,7,2012
+2087,pythagorean wins,8,2012
+2088,pythagorean wins,9,2012
+2089,pythagorean wins,10,2012
+2090,pythagorean wins,11,2012
+2091,pythagorean wins,12,2012
+2092,pythagorean wins,13,2012
+2093,pythagorean wins,14,2012
+2094,pythagorean wins,15,2012
+2095,pythagorean wins,16,2012
+2096,pythagorean wins,17,2012
+2097,pythagorean wins,18,2012
+2098,pythagorean wins,19,2012
+2099,pythagorean wins,20,2012
+2100,pythagorean wins,21,2012
+2101,pythagorean wins,22,2012
+2102,pythagorean wins,23,2012
+2103,pythagorean wins,24,2012
+2104,pythagorean wins,25,2012
+2105,pythagorean wins,26,2012
+2106,pythagorean wins,27,2012
+2107,pythagorean wins,28,2012
+2108,pythagorean wins,29,2012
+2109,pythagorean wins,30,2012
+2110,pythagorean wins,31,2012
+2111,pythagorean wins,32,2012
+2112,eigenvector,1,2002
+2113,eigenvector,2,2002
+2114,eigenvector,3,2002
+2115,eigenvector,4,2002
+2116,eigenvector,5,2002
+2117,eigenvector,6,2002
+2118,eigenvector,7,2002
+2119,eigenvector,8,2002
+2120,eigenvector,9,2002
+2121,eigenvector,10,2002
+2122,eigenvector,11,2002
+2123,eigenvector,12,2002
+2124,eigenvector,13,2002
+2125,eigenvector,14,2002
+2126,eigenvector,15,2002
+2127,eigenvector,16,2002
+2128,eigenvector,17,2002
+2129,eigenvector,18,2002
+2130,eigenvector,19,2002
+2131,eigenvector,20,2002
+2132,eigenvector,21,2002
+2133,eigenvector,22,2002
+2134,eigenvector,23,2002
+2135,eigenvector,24,2002
+2136,eigenvector,25,2002
+2137,eigenvector,26,2002
+2138,eigenvector,27,2002
+2139,eigenvector,28,2002
+2140,eigenvector,29,2002
+2141,eigenvector,30,2002
+2142,eigenvector,31,2002
+2143,eigenvector,32,2002
+2144,eigenvector,1,2003
+2145,eigenvector,2,2003
+2146,eigenvector,3,2003
+2147,eigenvector,4,2003
+2148,eigenvector,5,2003
+2149,eigenvector,6,2003
+2150,eigenvector,7,2003
+2151,eigenvector,8,2003
+2152,eigenvector,9,2003
+2153,eigenvector,10,2003
+2154,eigenvector,11,2003
+2155,eigenvector,12,2003
+2156,eigenvector,13,2003
+2157,eigenvector,14,2003
+2158,eigenvector,15,2003
+2159,eigenvector,16,2003
+2160,eigenvector,17,2003
+2161,eigenvector,18,2003
+2162,eigenvector,19,2003
+2163,eigenvector,20,2003
+2164,eigenvector,21,2003
+2165,eigenvector,22,2003
+2166,eigenvector,23,2003
+2167,eigenvector,24,2003
+2168,eigenvector,25,2003
+2169,eigenvector,26,2003
+2170,eigenvector,27,2003
+2171,eigenvector,28,2003
+2172,eigenvector,29,2003
+2173,eigenvector,30,2003
+2174,eigenvector,31,2003
+2175,eigenvector,32,2003
+2176,eigenvector,1,2004
+2177,eigenvector,2,2004
+2178,eigenvector,3,2004
+2179,eigenvector,4,2004
+2180,eigenvector,5,2004
+2181,eigenvector,6,2004
+2182,eigenvector,7,2004
+2183,eigenvector,8,2004
+2184,eigenvector,9,2004
+2185,eigenvector,10,2004
+2186,eigenvector,11,2004
+2187,eigenvector,12,2004
+2188,eigenvector,13,2004
+2189,eigenvector,14,2004
+2190,eigenvector,15,2004
+2191,eigenvector,16,2004
+2192,eigenvector,17,2004
+2193,eigenvector,18,2004
+2194,eigenvector,19,2004
+2195,eigenvector,20,2004
+2196,eigenvector,21,2004
+2197,eigenvector,22,2004
+2198,eigenvector,23,2004
+2199,eigenvector,24,2004
+2200,eigenvector,25,2004
+2201,eigenvector,26,2004
+2202,eigenvector,27,2004
+2203,eigenvector,28,2004
+2204,eigenvector,29,2004
+2205,eigenvector,30,2004
+2206,eigenvector,31,2004
+2207,eigenvector,32,2004
+2208,eigenvector,1,2005
+2209,eigenvector,2,2005
+2210,eigenvector,3,2005
+2211,eigenvector,4,2005
+2212,eigenvector,5,2005
+2213,eigenvector,6,2005
+2214,eigenvector,7,2005
+2215,eigenvector,8,2005
+2216,eigenvector,9,2005
+2217,eigenvector,10,2005
+2218,eigenvector,11,2005
+2219,eigenvector,12,2005
+2220,eigenvector,13,2005
+2221,eigenvector,14,2005
+2222,eigenvector,15,2005
+2223,eigenvector,16,2005
+2224,eigenvector,17,2005
+2225,eigenvector,18,2005
+2226,eigenvector,19,2005
+2227,eigenvector,20,2005
+2228,eigenvector,21,2005
+2229,eigenvector,22,2005
+2230,eigenvector,23,2005
+2231,eigenvector,24,2005
+2232,eigenvector,25,2005
+2233,eigenvector,26,2005
+2234,eigenvector,27,2005
+2235,eigenvector,28,2005
+2236,eigenvector,29,2005
+2237,eigenvector,30,2005
+2238,eigenvector,31,2005
+2239,eigenvector,32,2005
+2240,eigenvector,1,2006
+2241,eigenvector,2,2006
+2242,eigenvector,3,2006
+2243,eigenvector,4,2006
+2244,eigenvector,5,2006
+2245,eigenvector,6,2006
+2246,eigenvector,7,2006
+2247,eigenvector,8,2006
+2248,eigenvector,9,2006
+2249,eigenvector,10,2006
+2250,eigenvector,11,2006
+2251,eigenvector,12,2006
+2252,eigenvector,13,2006
+2253,eigenvector,14,2006
+2254,eigenvector,15,2006
+2255,eigenvector,16,2006
+2256,eigenvector,17,2006
+2257,eigenvector,18,2006
+2258,eigenvector,19,2006
+2259,eigenvector,20,2006
+2260,eigenvector,21,2006
+2261,eigenvector,22,2006
+2262,eigenvector,23,2006
+2263,eigenvector,24,2006
+2264,eigenvector,25,2006
+2265,eigenvector,26,2006
+2266,eigenvector,27,2006
+2267,eigenvector,28,2006
+2268,eigenvector,29,2006
+2269,eigenvector,30,2006
+2270,eigenvector,31,2006
+2271,eigenvector,32,2006
+2272,eigenvector,1,2007
+2273,eigenvector,2,2007
+2274,eigenvector,3,2007
+2275,eigenvector,4,2007
+2276,eigenvector,5,2007
+2277,eigenvector,6,2007
+2278,eigenvector,7,2007
+2279,eigenvector,8,2007
+2280,eigenvector,9,2007
+2281,eigenvector,10,2007
+2282,eigenvector,11,2007
+2283,eigenvector,12,2007
+2284,eigenvector,13,2007
+2285,eigenvector,14,2007
+2286,eigenvector,15,2007
+2287,eigenvector,16,2007
+2288,eigenvector,17,2007
+2289,eigenvector,18,2007
+2290,eigenvector,19,2007
+2291,eigenvector,20,2007
+2292,eigenvector,21,2007
+2293,eigenvector,22,2007
+2294,eigenvector,23,2007
+2295,eigenvector,24,2007
+2296,eigenvector,25,2007
+2297,eigenvector,26,2007
+2298,eigenvector,27,2007
+2299,eigenvector,28,2007
+2300,eigenvector,29,2007
+2301,eigenvector,30,2007
+2302,eigenvector,31,2007
+2303,eigenvector,32,2007
+2304,eigenvector,1,2008
+2305,eigenvector,2,2008
+2306,eigenvector,3,2008
+2307,eigenvector,4,2008
+2308,eigenvector,5,2008
+2309,eigenvector,6,2008
+2310,eigenvector,7,2008
+2311,eigenvector,8,2008
+2312,eigenvector,9,2008
+2313,eigenvector,10,2008
+2314,eigenvector,11,2008
+2315,eigenvector,12,2008
+2316,eigenvector,13,2008
+2317,eigenvector,14,2008
+2318,eigenvector,15,2008
+2319,eigenvector,16,2008
+2320,eigenvector,17,2008
+2321,eigenvector,18,2008
+2322,eigenvector,19,2008
+2323,eigenvector,20,2008
+2324,eigenvector,21,2008
+2325,eigenvector,22,2008
+2326,eigenvector,23,2008
+2327,eigenvector,24,2008
+2328,eigenvector,25,2008
+2329,eigenvector,26,2008
+2330,eigenvector,27,2008
+2331,eigenvector,28,2008
+2332,eigenvector,29,2008
+2333,eigenvector,30,2008
+2334,eigenvector,31,2008
+2335,eigenvector,32,2008
+2336,eigenvector,1,2009
+2337,eigenvector,2,2009
+2338,eigenvector,3,2009
+2339,eigenvector,4,2009
+2340,eigenvector,5,2009
+2341,eigenvector,6,2009
+2342,eigenvector,7,2009
+2343,eigenvector,8,2009
+2344,eigenvector,9,2009
+2345,eigenvector,10,2009
+2346,eigenvector,11,2009
+2347,eigenvector,12,2009
+2348,eigenvector,13,2009
+2349,eigenvector,14,2009
+2350,eigenvector,15,2009
+2351,eigenvector,16,2009
+2352,eigenvector,17,2009
+2353,eigenvector,18,2009
+2354,eigenvector,19,2009
+2355,eigenvector,20,2009
+2356,eigenvector,21,2009
+2357,eigenvector,22,2009
+2358,eigenvector,23,2009
+2359,eigenvector,24,2009
+2360,eigenvector,25,2009
+2361,eigenvector,26,2009
+2362,eigenvector,27,2009
+2363,eigenvector,28,2009
+2364,eigenvector,29,2009
+2365,eigenvector,30,2009
+2366,eigenvector,31,2009
+2367,eigenvector,32,2009
+2368,eigenvector,1,2010
+2369,eigenvector,2,2010
+2370,eigenvector,3,2010
+2371,eigenvector,4,2010
+2372,eigenvector,5,2010
+2373,eigenvector,6,2010
+2374,eigenvector,7,2010
+2375,eigenvector,8,2010
+2376,eigenvector,9,2010
+2377,eigenvector,10,2010
+2378,eigenvector,11,2010
+2379,eigenvector,12,2010
+2380,eigenvector,13,2010
+2381,eigenvector,14,2010
+2382,eigenvector,15,2010
+2383,eigenvector,16,2010
+2384,eigenvector,17,2010
+2385,eigenvector,18,2010
+2386,eigenvector,19,2010
+2387,eigenvector,20,2010
+2388,eigenvector,21,2010
+2389,eigenvector,22,2010
+2390,eigenvector,23,2010
+2391,eigenvector,24,2010
+2392,eigenvector,25,2010
+2393,eigenvector,26,2010
+2394,eigenvector,27,2010
+2395,eigenvector,28,2010
+2396,eigenvector,29,2010
+2397,eigenvector,30,2010
+2398,eigenvector,31,2010
+2399,eigenvector,32,2010
+2400,eigenvector,1,2011
+2401,eigenvector,2,2011
+2402,eigenvector,3,2011
+2403,eigenvector,4,2011
+2404,eigenvector,5,2011
+2405,eigenvector,6,2011
+2406,eigenvector,7,2011
+2407,eigenvector,8,2011
+2408,eigenvector,9,2011
+2409,eigenvector,10,2011
+2410,eigenvector,11,2011
+2411,eigenvector,12,2011
+2412,eigenvector,13,2011
+2413,eigenvector,14,2011
+2414,eigenvector,15,2011
+2415,eigenvector,16,2011
+2416,eigenvector,17,2011
+2417,eigenvector,18,2011
+2418,eigenvector,19,2011
+2419,eigenvector,20,2011
+2420,eigenvector,21,2011
+2421,eigenvector,22,2011
+2422,eigenvector,23,2011
+2423,eigenvector,24,2011
+2424,eigenvector,25,2011
+2425,eigenvector,26,2011
+2426,eigenvector,27,2011
+2427,eigenvector,28,2011
+2428,eigenvector,29,2011
+2429,eigenvector,30,2011
+2430,eigenvector,31,2011
+2431,eigenvector,32,2011
+2432,eigenvector,1,2012
+2433,eigenvector,2,2012
+2434,eigenvector,3,2012
+2435,eigenvector,4,2012
+2436,eigenvector,5,2012
+2437,eigenvector,6,2012
+2438,eigenvector,7,2012
+2439,eigenvector,8,2012
+2440,eigenvector,9,2012
+2441,eigenvector,10,2012
+2442,eigenvector,11,2012
+2443,eigenvector,12,2012
+2444,eigenvector,13,2012
+2445,eigenvector,14,2012
+2446,eigenvector,15,2012
+2447,eigenvector,16,2012
+2448,eigenvector,17,2012
+2449,eigenvector,18,2012
+2450,eigenvector,19,2012
+2451,eigenvector,20,2012
+2452,eigenvector,21,2012
+2453,eigenvector,22,2012
+2454,eigenvector,23,2012
+2455,eigenvector,24,2012
+2456,eigenvector,25,2012
+2457,eigenvector,26,2012
+2458,eigenvector,27,2012
+2459,eigenvector,28,2012
+2460,eigenvector,29,2012
+2461,eigenvector,30,2012
+2462,eigenvector,31,2012
+2463,eigenvector,32,2012
