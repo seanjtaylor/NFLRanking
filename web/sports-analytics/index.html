@@ -1,0 +1,740 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Sports Analytics</title>
+
+		<meta name="description" content="">
+		<meta name="author" content="Sean J. Taylor">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+        
+        <script type="text/javascript" src="graphics.js"></script>
+	<script type="text/javascript" src="http://d3js.org/d3.v2.min.js"></script>
+		<style>
+.team-name {
+  font-size: 14px;
+}
+.win-cell {
+  fill: black;
+}
+.diag-cell {
+  fill: white;
+}
+.ranking-table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.ranking-table img {
+  height: 35px;
+  width: 70px;
+  border: none;
+}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h1>Sports Analytics</h1>
+					<h3>Data as a competitive advantage</h3>
+					<p>
+					  <small><a href="http://seanjtaylor.com">Sean J. Taylor</a> / <a href="http://twitter.com/seanjtaylor">@seanjtaylor</a></small>
+					</p>
+				</section>
+
+				<section>
+				    <section>
+					<h2>Introduction</h2>
+					<p>
+					  <img src="img/nyustern.jpg" alt="NYU Stern">
+					</p>
+					<p>5th year PhD candidate at NYU Stern</p>
+					</section>
+					<section>
+					<h2>interests</h2>
+					<ul>
+					  <li>Social influence</li>
+					  <li>Causal Inference and Web Experiments</li>
+					  <li>Bayesian modeling</li>
+					  <li>Prediction</li>
+					</ul>
+					</section>
+                    <section>
+					<h2>toolbox</h2>
+					<p>
+					  <img height=200 width=200 src="img/python.jpg" alt="Python">
+					  <img height=200 width=264 src="img/R.png" alt="R">
+					</p>
+					<p>
+					  <img height=200 width=302 src="img/d3.png" alt="D3">
+					  <img height=200 width=200 src="img/stan.png" alt="Stan">
+					</p>
+					</section>
+					<section>
+					<h2>lifelong Eagles fan</h2>
+					<p>
+					  <img src="img/eaglesfan.jpg" alt="Eagles">
+					</p>
+					
+					</section>
+					<section>
+					<p>
+					  <img src="img/eaglestop.png" alt="We're #1!">
+					</p>
+					
+					</section>
+					<section>
+					<p>
+					  <a href="https://www.facebook.com/notes/facebook-data-science/nfl-fans-on-facebook/10151298370823859"><img src="img/nfl.full.png" alt="Did someone say NFL map?"></a>
+					</p>
+					
+					</section>
+
+				</section>
+				<section>
+				  <h2>Outline</h2>
+				  <ul>
+				    <li>Big Picture: Sports questions and answers</li>
+				    <li>Measurement</li>
+				    <li>Prediction</li>
+				    <li>Decision</li>
+				    <li>Second half: Ranking methods</li>
+				  </ul>
+				</section>
+
+
+				<section>
+				        <section>
+						<h2>The Rise of Sports Analytics</h2>
+						  <img src="img/moneyball.jpg" alt="Moneyball">
+					</section>
+					<section>
+						<h2>More Recently</h2>
+						  <img src="img/sloan.jpg" alt="Sloan Sports Conference">
+					</section>
+					<section>
+						<h2>Recipe for success</h2>
+						<ol>
+						  <li>Ask a good question</li>
+						  <li>Gather data that can answer it</li>
+						  <li>Carefully build and test simple models</li>
+						  <li>Embrace uncertainty</li>
+						  <li>Be a Bayesian</li>
+						</ol>
+					</section>
+					<section>
+						<h2>Importance of Questions</h2>
+						<blockquote cite="http://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0002bA">
+						  Far better an approximate answer to the right question, which is often vague, than an exact answer to the wrong question, which can always be made precise.
+						</blockquote>
+						<p> &mdash; John Tukey </p>
+
+					</section>
+					<section>
+						<h2>Data</h2>
+						<a class="image" href="https://docs.google.com/spreadsheet/ccc?key=0AhhDICfXNoPDdDF3aWNWVUFhQ2ZiNjVRUDdhU3BPTUE#gid=0" target="_blank">
+						<img height=200 width=200 src="img/ncaa-logo.jpg" alt="NCAA">
+						</a>
+						<a class="image" href="https://github.com/neilkod/hockeyhacking" target="_blank">
+						<img height=200 width=200 src="img/nhl_logo.gif" alt="NHL">
+						</a>
+						<a class="image" href="http://www.advancednflstats.com/2010/04/play-by-play-data.html" target="_blank">
+						<img height=200 width=200 src="img/NFL_logo.jpg" alt="NFL">
+						</a>
+						<p><a href="http://nbviewer.ipython.org/4743272">Tutorial on Web Scraping</a></p>
+					</section>
+					<section>
+						<h2>Building Models</h2>
+						<blockquote cite="http://en.wikiquote.org/wiki/George_E._P._Box">
+						  Since all models are wrong the scientist cannot obtain a  &lsquo;correct&rsquo; one by excessive elaboration. On the contrary following William of Occam he should seek an economical description of natural phenomena. Just as the ability to devise simple but evocative models is the signature of the great scientist so overelaboration and overparameterization is often the mark of mediocrity.
+						</blockquote>
+						<p> &mdash; George E.P. Box </p>
+
+					</section>
+					<section>
+						<h2>Uncertainty</h2>
+						<a href="http://en.wikipedia.org/wiki/Bean_machine">
+						  <img height=500 width=500 src="img/Planche_de_Galton.jpg" alt="Galton Box">
+						</a>
+					</section>
+					<section>
+						<h2>Be a Bayesian</h2>
+						<p><a href="http://en.wikipedia.org/wiki/Bayesian_probability">
+						  <img src="img/bayes.gif" alt="Updating a prior">
+						</a></p>
+						<p><a href="http://en.wikipedia.org/wiki/Bayesian_probability">
+						  <img height=200 src="img/voulgaris.jpg" alt="Bob Voulgaris">
+						</a></p>
+					</section>
+					<section>
+						<h2>Three Types of Questions</h2>
+						<ul>
+						  <li>Measurement</li>
+						  <li>Prediction</li>
+						  <li>Decision</li>
+ 						</ul>
+					</section>
+				</section>
+				<section>
+  				       <section>
+						<h2>Measurement</h2>
+						<p><img height=200 src="img/measurement.jpg" alt="Measurement"></p>
+						<ol>
+						  <li>Normalize</li>
+						  <li>Put a confidence interval on it</li>
+						  <li>Nothing is i.i.d.</li>
+ 						</ol>
+					</section>
+  				       <section>
+						<h2>Common theme?</h2>
+						<p>
+					  <img height=200 src="img/Roger_Maris.jpg" alt="Roger">
+					  <img height=200 src="img/bonds.jpeg" alt="Barry">
+					</p>
+					<p>
+					  <img height=200 src="img/mcgwire.jpg" alt="Mark">
+					  <img height=200 src="img/Babe_Ruth.jpg" alt="Babe">
+					</p>
+					</section>
+				       <section>
+  					<h2>Counts = The most useless</h2>
+					<img src="img/homers.jpg" alt="homers">
+					</section>
+				       <section>
+  					<h2>Normalize by Opportunity = Rates</h2>
+					<img src="img/homers-atbats.jpg" alt="homers">
+					</section>
+				       <section>
+  					<h2>Normalize by Opportunity (Take 2)</h2>
+					<img src="img/homers-pa.jpg" alt="homers">
+					</section>
+				       <section>
+  					<h2>Account for Uncertainty</h2>
+					<img src="img/homers-cis.jpg" alt="homers">
+					</section>
+				       <section>
+  					<h2>Opponent Adjustments</h2>
+					<img src="img/rodgers.png" alt="Rodgers">
+					<p> \[ P(\mbox{complete}=1) = \mbox{logit}^{-1}(\alpha_i + \beta_j + \epsilon_{ijk} )\] </p>
+					</section>
+				       
+				       <section>
+  					<h2>Application: NFL Draft Pick Value</h2>
+					<a href="http://www.footballperspective.com/creating-a-nfl-draft-value-chart-part-i/"><img height=640 src="img/draft-value.png" alt="Draft Value"></a>
+					</section>
+				</section>
+				<section>
+  				       <section>
+						<h2>Prediction</h2>
+						<p><img height=200 src="img/prediction.jpg" alt="Prediction"></p>
+						<ol>
+						  <li>Mean regression</li>
+						  <li>Predict a distribution</li>
+						  <li>Forward cross-validation</li>
+ 						</ol>
+					</section>
+				       <section>
+						<h2>Regression to the Mean</h2>
+						<img src="img/nfl-mean-regression.jpg" alt="Regression to the Mean">
+					</section>
+				       <section>
+						<h2>Shrinkage Estimators</h2>
+						<img src="img/stein-estimator.png" alt="James-Stein Estimators">
+				       </section>
+				       <section>
+						<h2>Predict a Distribution</h2>
+						<img src="img/eagles-projection.png" alt="FOA 2012 Eagles Projection">
+				       </section>
+				       <section>
+						<h2>Forward Cross-validation</h2>
+<ol>
+<li>Fit the model to the data \(y_1, y_2, \ldots, y_t\) and let \(\hat{y}_{t+1}\) denote the forecast of the next observation. </li>
+<li>Compute the error \(e_{t+1} = y_{t+1} - \hat{y}_{t+1}\) for the forecast observation.</li>
+<li>Repeat step 1 for \(t = m, \ldots, n-1\) where \(m\) is the minimum number of observations needed for fitting the model.</li>
+<li>Compute MSE or ROC from \(e_{m+1}, \ldots, e_n\)</li>
+</ol>
+					</section>
+				       <section>
+  					<h2>Application: In-game Win Probabilities</h2>
+					<a href="http://www.advancednflstats.com/"><img src="img/anfls-wp.png" alt="Win Probability"></a>
+					</section>
+				</section>
+				<section>
+  				       <section>
+						<h2>Decision</h2>
+						<p>Similar to prediction, but you control some of the variables:</p>
+						<ul>
+						  <li>Personnel</li>
+						  <li>Strategy</li>
+						</ul>
+					</section>
+				       <section>
+						<h2>Case Study: 4th Down Decision</h2>
+						<p>In the NFL, teams have 3 options on 4th down:</p>
+						<ul>
+						  <li>Run a play</li>
+						  <li>Field Goal Attempt</li>
+						  <li>Punt</li>
+						</ul>
+						<p><a href="http://www.advancednflstats.com/2009/09/4th-down-study-part-1.html">http://www.advancednflstats.com/2009/09/4th-down-study-part-1.html</a></p>
+					</section>
+				       <section>
+						<h2>Running a play:</h2>
+						<img src="img/4th-down-attempt.png" alt="Attempt">
+					</section>
+				       <section>
+						<h2>Field Goal Attempt:</h2>
+						<img src="img/4th-down-fg.png" alt="Field Goal">
+					</section>
+				       <section>
+						<h2>Punt:</h2>
+						<img src="img/4th-down-punt.png" alt="Punt">
+					</section>
+				       <section>
+						<h2>Field Position Value:</h2>
+						<img src="img/4th-down-ep.png" alt="Expected Points">
+					</section>
+				       <section>
+						<h2>Optimal Decision:</h2>
+						<img src="img/4th-down.png" alt="Decision">
+					</section>
+				</section>
+				<section>
+  				       <section>
+						<h2>Ranking Models for NFL Teams</h2>
+					</section>
+					<section>
+						<h2>Ranking == Decision Tool</h2>
+						<a class="image" href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities" target="_blank">
+						<img src="img/usnews.jpg" alt="US News Rankings">
+						</a>
+                        <p>where to go to college?</p>
+					</section>
+					<section>
+						<h2>Ranking == Description</h2>
+
+						<a class="image" href="http://www.nber.org/papers/w10803.pdf" target="_blank">
+						<img src="img/college-revealed.png" alt="Revealed Preference Rankings">
+						</a>
+						<p>which colleges are being chosen over others?</p>
+						<p>"A Revealed Preference Ranking of U.S. Colleges and Universities" (Avery et al. 2004)</p>
+					</section>
+					<section>
+						<h2>Ranking == Total ordering</h2>
+						<ul>
+						<li> set of items: \( X \) </li>
+						<li> binary relation: \( \geq \) </li>
+						<li> transitivity: \( a \geq b \; \wedge \; b \geq c \Rightarrow a \geq c \)  </li>
+						<li> totality: \( a \geq b \; \vee \; b \geq a \; \forall a, b \in X \)  </li>
+						<li> anti-symmetry: \( a \geq b \; \wedge \; b \geq a \; \Leftrightarrow a =  b \)  </li>
+						</ul>
+					</section>
+					<section>
+						<h2>Ranking == Classification</h2>
+                        <p>Ranking problem can be transformed into a two-class classification problem via the <a href="http://fseoane.net/blog/2012/learning-to-rank-with-scikit-learn-the-pairwise-transform/">pairwise transform</a>.</p>
+						<p>Goal:  Learn \( \; f : X \times X \rightarrow \{-1,1\} \).</p>
+					</section>
+					<section>
+						<h2>Ranking == Regression</h2>
+						<p>All we have to do is use: \( (\mathbb{R}, \geq) \)!</p>
+						<p>
+						<ul>
+						<li> Obviously satisfies total ordering criteria. </li>
+						<li> But has a bit more: we have/need a metric. </li>
+						<li> Shows ranking can be a regression problem. </li>
+						</ul>
+						</p>
+						<p>Goal: Learn scoring function \( q : X \rightarrow \mathbb{R} \) .</p>
+					</section>
+				</section>
+
+				<section>
+				  <section>
+					<h2>Getting it wrong: Loss Functions</h2>
+					<ul>
+					<li>Descriptive loss</li>
+					<li>Predictive loss</li>
+					<li>Ranking agreements</li>
+					</ul>
+				  </section>
+				  <section>
+				    <h2>Zero-One Loss</h2>
+				    <p>Count the games where the ranking-predicted winner is upset.</p>
+				    <h2>Misrank Loss</h2>
+				    <p>If the ranking-predicted winner loses, add the difference in ranks to the loss.</p>
+				  </section>
+
+				  <section data-state="win-matrix">
+					<h2>Win Matrix </h2>
+					<svg id="win-matrix"></svg>
+					<p>
+					<label for="win-matrix-season">Season: <var id="selected-season">2012</var></label>
+					<input id="win-matrix-season" type="range" min="2002" max="2012" value="2012">
+					<label for="win-matrix-week">Week: <var id="selected-week">17</var></label>
+					<input id="win-matrix-week" type="range" min="1" max="20" value="17">
+					</p>
+				  </section>
+
+				  <section>
+				    <h2>Ranking Agreement</h2>
+ 				    <p>Kendall tau distance is a metric that counts the number of pairwise disagreements between two rankings.</p>
+				    <p>Two rankings \( R_1, R_2 \) disagree on pair \( i, j \) if:</p>
+				    <p> \[ R_1(i) > R_1(j) \wedge R_2(i) < R_2(j) \] </p>
+				    <p>	Useful if we want to match some existing ranking, say ESPN.com Power Rankings.</p>
+				  </section>
+				</section>
+
+				<section>
+					<h2>Methods</h2>
+					<ul>
+					<li>Pythagorean wins</li>
+					<li>Eigenvector</li>
+					<li>Bradley-Terry-Luce</li>
+					<li>Optimal Rankings (if time)</li>
+					</ul>
+				</section>
+				<section>
+				  <section>
+					<h2>Pythagorean Wins</h2>
+					<blockquote cite="http://en.wikipedia.org/wiki/Pythagorean_expectation#Use_in_pro_football">
+					From 1988 through 2004, 11 of 16 Super Bowls were won by the team that led the NFL in Pythagorean wins, while only seven were won by the team with the most actual victories. Super Bowl champions that led the league in Pythagorean wins but not actual wins include the 2004 Patriots, 2000 Ravens, 1999 Rams and 1997 Broncos.
+					</blockquote>
+					<p> &mdash; Football Outsiders Almanac (2011) </p>
+					<p>See also <a href="http://www.footballoutsiders.com/stat-analysis/2003/pythagoras-gridiron">this post</a>.
+		                  </section>
+				  <section>
+				    <h2>Formula</h2>
+				    <p> Points for \( = y \), Points against \( = x \)</p>
+				    <p>Win Rate \( = \frac{y^{\beta}}{x^{\beta} + y^{\beta}} \)</p>
+				    <p>Set \( \beta \) empirically, different for each sport.</p>
+				    <p>\( \beta \) can be thought of as a shrinkage parameter.</p>
+				  </section>
+				  <section>
+				    <h2>Visualization</h2>
+				    <a class="image" href="http://en.wikipedia.org/wiki/Pythagorean_theorem" target="_blank">
+				      <img src="img/pythagorean.png" alt="Pythagorean Wins is the square of the sine of this vector.">
+				    </a>
+				  </section>
+				  <section>
+				    <h2>Pythagorean Wins</h2>
+<table class="ranking-table" style="margin-left: auto; margin-right: auto;"><tr><td>1</td><td><img src="../logos/NE.png" width=70 height=35 style="border:none;"/></td><td>9</td><td><img src="../logos/NYG.png" width=70 height=35 style="border:none;"/></td><td>17</td><td><img src="../logos/TB.png" width=70 height=35 style="border:none;"/></td><td>25</td><td><img src="../logos/BUF.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>2</td><td><img src="../logos/SEA.png" width=70 height=35 style="border:none;"/></td><td>10</td><td><img src="../logos/CIN.png" width=70 height=35 style="border:none;"/></td><td>18</td><td><img src="../logos/CAR.png" width=70 height=35 style="border:none;"/></td><td>26</td><td><img src="../logos/NYJ.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>3</td><td><img src="../logos/DEN.png" width=70 height=35 style="border:none;"/></td><td>11</td><td><img src="../logos/BAL.png" width=70 height=35 style="border:none;"/></td><td>19</td><td><img src="../logos/DAL.png" width=70 height=35 style="border:none;"/></td><td>27</td><td><img src="../logos/TEN.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>4</td><td><img src="../logos/SF.png" width=70 height=35 style="border:none;"/></td><td>12</td><td><img src="../logos/WAS.png" width=70 height=35 style="border:none;"/></td><td>20</td><td><img src="../logos/IND.png" width=70 height=35 style="border:none;"/></td><td>28</td><td><img src="../logos/ARI.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>5</td><td><img src="../logos/ATL.png" width=70 height=35 style="border:none;"/></td><td>13</td><td><img src="../logos/MIN.png" width=70 height=35 style="border:none;"/></td><td>21</td><td><img src="../logos/MIA.png" width=70 height=35 style="border:none;"/></td><td>29</td><td><img src="../logos/OAK.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>6</td><td><img src="../logos/CHI.png" width=70 height=35 style="border:none;"/></td><td>14</td><td><img src="../logos/PIT.png" width=70 height=35 style="border:none;"/></td><td>22</td><td><img src="../logos/STL.png" width=70 height=35 style="border:none;"/></td><td>30</td><td><img src="../logos/PHI.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>7</td><td><img src="../logos/GB.png" width=70 height=35 style="border:none;"/></td><td>15</td><td><img src="../logos/NO.png" width=70 height=35 style="border:none;"/></td><td>23</td><td><img src="../logos/DET.png" width=70 height=35 style="border:none;"/></td><td>31</td><td><img src="../logos/JAC.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>8</td><td><img src="../logos/HOU.png" width=70 height=35 style="border:none;"/></td><td>16</td><td><img src="../logos/SD.png" width=70 height=35 style="border:none;"/></td><td>24</td><td><img src="../logos/CLE.png" width=70 height=35 style="border:none;"/></td><td>32</td><td><img src="../logos/KC.png" width=70 height=35 style="border:none;"/></td></tr></table>
+				  </section>
+				</section>
+
+				<section>
+				  <section>
+					<h2>Eigenvector Method</h2>
+					<p>Idea: iteratively adjust for strength of schedule. Give more credit to victories over teams which are "good"</p>
+					<p>\( r_i \) is the score of team \( i \). \( a_{ij} \) is 1 if \( i \) beat \( j \). </p>
+					<p>\[ \lambda r_i = \frac{1}{n_i} = \sum_{j=1}^N a_{ij} r_j \] </p>
+					<p> \[ \mathbf{A} \mathbf{r} = \lambda \mathbf{r} \]</p>
+				  </section>
+				  <section>
+					<h2>Perron-Frobenius</h2>
+					<p>If \( \mathbf{A} \) is nonnegative and irreducible, it has a strictly positive eigenvector corresponding to its largest eigenvalue.
+					</p>
+				  </section>
+				  <section>
+					<h2>Intuition</h2>
+					<p>
+\[ 
+\begin{array}{r}
+DAL \\
+NYG \\
+PHI \\
+WAS 
+\end{array}
+\left( \begin{array}{cccc}
+0 & 1 & 2 & 0 \\
+1 & 0 & 1 & 1 \\
+0 & 1 & 0 & 0 \\
+2 & 1 & 2 & 0 
+\end{array} \right)
+
+\left( \begin{array}{c}
+1 \\
+1 \\
+1 \\
+1 
+\end{array} \right)
+
+= 
+
+\left( \begin{array}{c}
+3 \\
+3 \\
+1 \\
+5 
+\end{array} \right)
+
+\] 
+					</p>
+				  </section>
+				  <section>
+				    <h2>Second order wins</h2>
+				    <p>
+\[ 
+
+\left( \begin{array}{cccc}
+0 & 1 & 2 & 0 \\
+1 & 0 & 1 & 1 \\
+0 & 1 & 0 & 0 \\
+2 & 1 & 2 & 0 
+\end{array} \right)
+
+\left( \begin{array}{cccc}
+0 & 1 & 2 & 0 \\
+1 & 0 & 1 & 1 \\
+0 & 1 & 0 & 0 \\
+2 & 1 & 2 & 0 
+\end{array} \right)
+
+\left( \begin{array}{c}
+1 \\
+1 \\
+1 \\
+1 
+\end{array} \right)
+
+= 
+
+\left( \begin{array}{c}
+5 \\
+9 \\
+3 \\
+11 
+\end{array} \right)
+
+\] 
+				    </p>
+				    <p>Must normalize this output vector by its norm.</p>
+				  </section>
+
+				  <section>
+				    <h2>K-th order rank</h2>
+				    <p>
+\[ 
+
+r_k = \frac{A^{k} r_0}{| A^{k} r_0 | }
+
+\] 
+				    </p>
+				    <p> The limit of this is just the first eigenvector!</p>
+				  </section>
+
+				  <section>
+				    <h2>Power iteration method</h2>
+				    <p>
+<pre><code>
+def power_iteration(m, iters=10000):
+    x0 = np.ones(m.shape[0])
+
+    for i in range(iters):
+        x0 = np.dot(m,x0)
+        x0 /= np.linalg.norm(x0,1)
+
+    return x0
+</pre></code>
+				    </p>
+				  </section>
+				  <section>
+				    <h2>Aside: PageRank</h2>
+				    <p>Redefine the preference matrix \( A \): </p>
+				    <p>\[ A' = (1 - \alpha) A  + \alpha \frac{1}{N} M \] </p>
+				    <p>where \( M \) is a matrix of all ones.</p>
+				  </section>
+				  <section>
+				    <h2>Eigenvector Method</h2>
+<table class="ranking-table" style="margin-left: auto; margin-right: auto;"><tr><td>1</td><td><img src="../logos/SEA.png" width=70 height=35 style="border:none;"/></td><td>9</td><td><img src="../logos/CIN.png" width=70 height=35 style="border:none;"/></td><td>17</td><td><img src="../logos/TB.png" width=70 height=35 style="border:none;"/></td><td>25</td><td><img src="../logos/TEN.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>2</td><td><img src="../logos/NE.png" width=70 height=35 style="border:none;"/></td><td>10</td><td><img src="../logos/HOU.png" width=70 height=35 style="border:none;"/></td><td>18</td><td><img src="../logos/DAL.png" width=70 height=35 style="border:none;"/></td><td>26</td><td><img src="../logos/CLE.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>3</td><td><img src="../logos/ATL.png" width=70 height=35 style="border:none;"/></td><td>11</td><td><img src="../logos/WAS.png" width=70 height=35 style="border:none;"/></td><td>19</td><td><img src="../logos/NO.png" width=70 height=35 style="border:none;"/></td><td>27</td><td><img src="../logos/BUF.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>4</td><td><img src="../logos/DEN.png" width=70 height=35 style="border:none;"/></td><td>12</td><td><img src="../logos/CHI.png" width=70 height=35 style="border:none;"/></td><td>20</td><td><img src="../logos/MIA.png" width=70 height=35 style="border:none;"/></td><td>28</td><td><img src="../logos/PHI.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>5</td><td><img src="../logos/SF.png" width=70 height=35 style="border:none;"/></td><td>13</td><td><img src="../logos/IND.png" width=70 height=35 style="border:none;"/></td><td>21</td><td><img src="../logos/STL.png" width=70 height=35 style="border:none;"/></td><td>29</td><td><img src="../logos/NYJ.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>6</td><td><img src="../logos/MIN.png" width=70 height=35 style="border:none;"/></td><td>14</td><td><img src="../logos/BAL.png" width=70 height=35 style="border:none;"/></td><td>22</td><td><img src="../logos/DET.png" width=70 height=35 style="border:none;"/></td><td>30</td><td><img src="../logos/OAK.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>7</td><td><img src="../logos/NYG.png" width=70 height=35 style="border:none;"/></td><td>15</td><td><img src="../logos/CAR.png" width=70 height=35 style="border:none;"/></td><td>23</td><td><img src="../logos/ARI.png" width=70 height=35 style="border:none;"/></td><td>31</td><td><img src="../logos/KC.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>8</td><td><img src="../logos/GB.png" width=70 height=35 style="border:none;"/></td><td>16</td><td><img src="../logos/PIT.png" width=70 height=35 style="border:none;"/></td><td>24</td><td><img src="../logos/SD.png" width=70 height=35 style="border:none;"/></td><td>32</td><td><img src="../logos/JAC.png" width=70 height=35 style="border:none;"/></td></tr></table>
+				  </section>
+				</section>
+				<section>
+				  <section>
+				    <h2>Bradley-Terry-Luce Model</h2>
+				    <p>\[ P(i>j) = \frac{1}{1 + e^{-(q_i - q_j)}} = \mbox{logit}^{-1}(q_i - q_j) \] </p>
+				    <p>(Bradley & Terry, 1952; Luce, 1959)</p>
+				    <p>This is basically the same as a <a href="http://en.wikipedia.org/wiki/Rasch_model">Rasch model</a> from education.</p>
+  				 </section>
+				 <section>
+				    <h2>BTL evolved</h2>
+				    <ul>
+				      <li>Add a parameter for home-field advantage.</li>
+				      <li>Weight observations so that older games count less toward the likelihood.</li>
+				      <li>Regularization.</li>
+				      <li>Add control variables for random events that affect outcomes but are NOT part of team quality.</li>
+				      <li>e.g. fumbles lost, defensive touchdowns, missed field goals.</li>
+				    </ul>
+  				 </section>
+				  <section>
+				    <h2>BTL Method</h2>
+<table class="ranking-table" style="margin-left: auto; margin-right: auto;"><tr><td>1</td><td><img src="../logos/DEN.png" width=70 height=35 style="border:none;"/></td><td>9</td><td><img src="../logos/IND.png" width=70 height=35 style="border:none;"/></td><td>17</td><td><img src="../logos/PIT.png" width=70 height=35 style="border:none;"/></td><td>25</td><td><img src="../logos/ARI.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>2</td><td><img src="../logos/ATL.png" width=70 height=35 style="border:none;"/></td><td>10</td><td><img src="../logos/CHI.png" width=70 height=35 style="border:none;"/></td><td>18</td><td><img src="../logos/NO.png" width=70 height=35 style="border:none;"/></td><td>26</td><td><img src="../logos/BUF.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>3</td><td><img src="../logos/HOU.png" width=70 height=35 style="border:none;"/></td><td>11</td><td><img src="../logos/WAS.png" width=70 height=35 style="border:none;"/></td><td>19</td><td><img src="../logos/CAR.png" width=70 height=35 style="border:none;"/></td><td>27</td><td><img src="../logos/DET.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>4</td><td><img src="../logos/NE.png" width=70 height=35 style="border:none;"/></td><td>12</td><td><img src="../logos/BAL.png" width=70 height=35 style="border:none;"/></td><td>20</td><td><img src="../logos/MIA.png" width=70 height=35 style="border:none;"/></td><td>28</td><td><img src="../logos/CLE.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>5</td><td><img src="../logos/GB.png" width=70 height=35 style="border:none;"/></td><td>13</td><td><img src="../logos/NYG.png" width=70 height=35 style="border:none;"/></td><td>21</td><td><img src="../logos/TB.png" width=70 height=35 style="border:none;"/></td><td>29</td><td><img src="../logos/PHI.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>6</td><td><img src="../logos/SF.png" width=70 height=35 style="border:none;"/></td><td>14</td><td><img src="../logos/CIN.png" width=70 height=35 style="border:none;"/></td><td>22</td><td><img src="../logos/NYJ.png" width=70 height=35 style="border:none;"/></td><td>30</td><td><img src="../logos/OAK.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>7</td><td><img src="../logos/SEA.png" width=70 height=35 style="border:none;"/></td><td>15</td><td><img src="../logos/STL.png" width=70 height=35 style="border:none;"/></td><td>23</td><td><img src="../logos/TEN.png" width=70 height=35 style="border:none;"/></td><td>31</td><td><img src="../logos/JAC.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>8</td><td><img src="../logos/MIN.png" width=70 height=35 style="border:none;"/></td><td>16</td><td><img src="../logos/DAL.png" width=70 height=35 style="border:none;"/></td><td>24</td><td><img src="../logos/SD.png" width=70 height=35 style="border:none;"/></td><td>32</td><td><img src="../logos/KC.png" width=70 height=35 style="border:none;"/></td></tr></table>
+				  </section>
+				</section>
+				<section>
+				  <section>
+				    <h2>Optimal Rankings</h2>
+				    <p>What's the absolute best we can do in <em>describing</em> the data with a ranking?</p>
+  				 </section>
+				  <section>
+					<h2>Games as a Graph</h2>
+                                        <svg id="game-graph"></svg>
+					<p>
+					<label for="game-graph-season">Season: <var id="gg-selected-season">2011</var></label>
+					<input id="game-graph-season" type="range" min="2002" max="2012" value="2012">
+					<label for="game-graph-week">Week: <var id="gg-selected-week">17</var></label>
+					<input id="game-graph-week" type="range" min="1" max="20" value="17">
+					</p>
+				  </section>
+				  <section>
+					<h2>Topological Sort</h2>
+					<a class="image" href="http://en.wikipedia.org/wiki/Topological_sorting" target="_blank">
+					  <img src="img/topological-sort.png" alt="Topological Sort">
+					</a>
+				  </section>
+				  <section>
+					<h2>Cycles</h2>
+                                        <svg id="three-cycle" width=600 height=600>
+					  <defs>
+					    <marker id="marker" viewBox="0 -5 10 10" refX="10" refY="-1.5" markerWidth="10" markerHeight="10" orient="auto">
+					      <path d="M0,-5L10,0L0,5" />
+					    </marker>
+					  </defs>
+					  <image xlink:href="../logos/PHI.png" width=100 height=50 transform="translate(100, 100)" />
+					  <image xlink:href="../logos/NYG.png" width=100 height=50 transform="translate(400, 100)" />
+					  <image xlink:href="../logos/BAL.png" width=100 height=50 transform="translate(250, 300)" />
+					  <line x1=190 y1=115 x2=420 y2=115 stroke="black" marker-end="url(#marker)" class="fragment" />
+					  <line x1=420 y1=135 x2=190 y2=135 stroke="black" marker-end="url(#marker)" class="fragment" />
+					  <line x1=190 y1=135 x2=300 y2=300 stroke="black" marker-end="url(#marker)" class="fragment" />
+					  <line x1=300 y1=300 x2=420 y2=135 stroke="black" marker-end="url(#marker)" class="fragment" />
+					</svg>
+				  </section>	
+				  <section>
+					<h2>Long Cycles</h2>
+					<a class="image" href="" target="_blank">
+					  <img width=300 height=300 src="img/cycle.png" alt="Long Cycles">
+					</a>
+				  </section>
+				  <section>
+					<h2>Removing the Cycles</h2>
+					<p>A <em>feedback arc set</em> is a set of edges whose removal makes the graph acyclic.</p>
+<pre><code>
+# g = igraph.Graph()
+feedback_arcs = g.feedback_arc_set(method='exact')
+g.delete_edges(feedback_arcs)
+</code></pre>
+<p>NP-Complete!</p>
+
+				  </section>
+				  <section>
+				    <h2>Optimal Rank</h2>
+<table class="ranking-table" style="margin-left: auto; margin-right: auto;"><tr><td>1</td><td><img src="../logos/ATL.png" width=70 height=35 style="border:none;"/></td><td>9</td><td><img src="../logos/HOU.png" width=70 height=35 style="border:none;"/></td><td>17</td><td><img src="../logos/CIN.png" width=70 height=35 style="border:none;"/></td><td>25</td><td><img src="../logos/DAL.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>2</td><td><img src="../logos/SEA.png" width=70 height=35 style="border:none;"/></td><td>10</td><td><img src="../logos/CHI.png" width=70 height=35 style="border:none;"/></td><td>18</td><td><img src="../logos/CAR.png" width=70 height=35 style="border:none;"/></td><td>26</td><td><img src="../logos/PHI.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>3</td><td><img src="../logos/IND.png" width=70 height=35 style="border:none;"/></td><td>11</td><td><img src="../logos/TEN.png" width=70 height=35 style="border:none;"/></td><td>19</td><td><img src="../logos/BUF.png" width=70 height=35 style="border:none;"/></td><td>27</td><td><img src="../logos/TB.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>4</td><td><img src="../logos/NYG.png" width=70 height=35 style="border:none;"/></td><td>12</td><td><img src="../logos/DEN.png" width=70 height=35 style="border:none;"/></td><td>20</td><td><img src="../logos/WAS.png" width=70 height=35 style="border:none;"/></td><td>28</td><td><img src="../logos/CLE.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>5</td><td><img src="../logos/MIN.png" width=70 height=35 style="border:none;"/></td><td>13</td><td><img src="../logos/PIT.png" width=70 height=35 style="border:none;"/></td><td>21</td><td><img src="../logos/ARI.png" width=70 height=35 style="border:none;"/></td><td>29</td><td><img src="../logos/SD.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>6</td><td><img src="../logos/SF.png" width=70 height=35 style="border:none;"/></td><td>14</td><td><img src="../logos/NYJ.png" width=70 height=35 style="border:none;"/></td><td>22</td><td><img src="../logos/NO.png" width=70 height=35 style="border:none;"/></td><td>30</td><td><img src="../logos/OAK.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>7</td><td><img src="../logos/NE.png" width=70 height=35 style="border:none;"/></td><td>15</td><td><img src="../logos/MIA.png" width=70 height=35 style="border:none;"/></td><td>23</td><td><img src="../logos/BAL.png" width=70 height=35 style="border:none;"/></td><td>31</td><td><img src="../logos/KC.png" width=70 height=35 style="border:none;"/></td></tr><tr><td>8</td><td><img src="../logos/GB.png" width=70 height=35 style="border:none;"/></td><td>16</td><td><img src="../logos/STL.png" width=70 height=35 style="border:none;"/></td><td>24</td><td><img src="../logos/DET.png" width=70 height=35 style="border:none;"/></td><td>32</td><td><img src="../logos/JAC.png" width=70 height=35 style="border:none;"/></td></tr></table>
+				  </section>
+				</section>
+				<section>
+				  <section>
+					<h2>Evaluation</h2>
+				  </section>
+					<section>
+					  <h2>Week 8 Power Rankings Similarity</h2>
+					  <img src="img/espn8.perf.png" />
+					</section>
+					<section>
+					  <h2>Week 17 Power Rankings Similarity</h2>
+					  <img src="img/espn17.perf.png" />
+					</section>
+					<section>
+					  <h2>Descriptive</h2>
+					  <img src="img/desc.perf.png" />
+					</section>
+					<section>
+					  <h2>In-Season Prediction</h2>
+					  <img src="img/season.perf.png" />
+					</section>
+					<section>
+					  <h2>Post-Season Prediction</h2>
+					  <img src="img/postseason.perf.png" />
+					</section>
+				</section>
+				<section>
+				  <h2>Make your predictions public</h2>
+				  <h3>http://creds.me</h3>
+				  <a href="http://creds.me/" target="_blank">
+				    <img src="img/creds_logo.png" />
+				  </a>
+				  <p>(shameless plug)</p>
+				</section>
+				<section>
+					<h1>Thanks!  Any questions?</h1>
+					<img src="../logos/PHI.png" style="border:none" />
+					<h3>Sean J. Taylor</h3>
+					<h3>@seanjtaylor</h3>
+					<h3>http://seanjtaylor.com</h3>
+					<p><a href="https://github.com/seanjtaylor/NFLRanking">https://github.com/seanjtaylor/NFLRanking</a></p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+Reveal.addEventListener("ready", winMatrix);
+Reveal.addEventListener("ready", gameGraph);
+Reveal.addEventListener( 'slidechanged', function( event ) {
+    MathJax.Hub.Rerender(event.currentSlide);
+} );
+
+		</script>
+
+	</body>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</html>
